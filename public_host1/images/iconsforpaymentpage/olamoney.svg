@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="38px" height="38px" viewBox="0 0 38 38" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>OlaMoney</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="OlaMoney" transform="translate(3.000000, 3.000000)">
+            <g id="Group">
+                <ellipse id="Oval" fill="#378F43" cx="16.0606316" cy="15.8770526" rx="15.5166316" ry="15.8155789"></ellipse>
+                <polygon id="Shape" fill="#8BC249" points="16.2416842 10.3385263 12.6189474 21.8458947 8.63410526 21.8458947 12.2568421 10.3385263 16.2416842 10.3385263"></polygon>
+                <polygon id="Shape" fill="#8BC249" points="23.3658947 10.3385263 19.7431579 21.8458947 15.7583158 21.8458947 19.3810526 10.3385263 23.3658947 10.3385263"></polygon>
+                <path d="M5.01052632,10.3385263 L8.63410526,21.8458947 L12.6189474,21.8458947 L8.99621053,10.3385263 L5.01052632,10.3385263 L5.01052632,10.3385263 Z M12.3166316,10.3385263 L15.9393684,21.8458947 L19.9242105,21.8458947 L16.3014737,10.3385263 L12.3166316,10.3385263 L12.3166316,10.3385263 Z M19.5621053,10.3385263 L23.1848421,21.8458947 L27.2303158,21.8458947 L23.6075789,10.3385263 L19.5621053,10.3385263 L19.5621053,10.3385263 Z" id="Shape" fill="#FFFFFF"></path>
+            </g>
+        </g>
+    </g>
+</svg>

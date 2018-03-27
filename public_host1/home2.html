@@ -1,0 +1,891 @@
+<!-- =========================
+ START ABOUT US SECTION
+ ============================== -->
+<div class="header-wrap hideheader" id="headerWrap" ng-controller="hideHeaderCtrl">
+<nav class="navbar navbar-default legalnavbartop mainmenu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <div id="btntodisable">
+      <button id="burgbtn"
+             type="button" 
+             class="navbar-toggle legaltogglebutton" 
+             data-toggle="collapse" 
+             data-target=".navbar-collapse" 
+              ng-click='burgebtn()'
+              ng-show='burgbtn'>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+      </button>
+      <button id="crsbtn" 
+              type="button" 
+              class="navbar-toggle legaltogglebutton toggcross" 
+              data-toggle="collapse" 
+              data-target=".navbar-collapse"
+              ng-click='crosbtn()' 
+              ng-show="crsbtn" >
+                                         
+                                          <img src="images/homesvgn/Cancel.svg" style="height: 20px;margin-top: 4px;">
+      </button>
+      </div>
+      <div class="legal-img-logo">
+        <a ng-href="/home" ng-click="button_click('/home')"><img class="logo_all" style="width:60px; height:60px; cursor: pointer;" target="_self"></a>
+      </div>
+    </div>
+
+    <div class="box effect1" ng-if="clpsef">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <li><a ng-click=" button_click('/home')"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li>
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-click="button_click('/home')"  type="button" style="color: #ef5350 !important;">HOME</a></li>
+        <li><a ng-click="button_click('/about')" type="button">ABOUT</a></li>
+        <li><a ng-click="button_click('/upi')" type="button">UPI</a></li>
+        <li><a ng-click="button_click('/student')">STUDENT</a></li>
+        <li><a ng-click="button_click('/business')">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked()" target="_blank">BLOG</a></li>
+        <li><a ng-click="button_click('/contact')">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="boxmain">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <!-- <li><a ng-href="/home" ng-click="button_click('/home')" target="_self"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li> -->
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-href="/home" ng-click="button_click('/home')" type="button" style="color: #ef5350 !important;" target="_self">HOME</a></li>
+        <li><a ng-href="/about" ng-click="button_click('/about')" target="_self">ABOUT</a></li>
+        <li><a ng-href="/upi" ng-click="button_click('/upi')" target="_self">UPI</a></li>
+        <li><a ng-href="/student" ng-click="button_click('/student')" target="_self">STUDENT</a></li>
+        <li><a ng-href="/business" ng-click="button_click('/business')" target="_self">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked2()" class="blogcls" onmouseover="chred(this)" onmouseout="chblack(this)" target="_blank">BLOG</a></li>
+        <li><a ng-href="/contact" ng-click="button_click('/contact')" target="_self">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</nav>
+</div>
+
+<!-- <div class="container-fluid">
+  <div id="navbar"> 
+    <ul> 
+      <li><a href="/home">HOME</a></li> 
+      <li><a href="/about">ABOUT</a></li> 
+      <li><a href="/upi">UPI</a></li> 
+      <li><a href="/student">STUDENT</a></li> 
+      <li><a href="/business">BUSINESS</a></li> 
+      <li><a href="/blog">BLOG</a></li>
+      <li><a href="/contact">CONTACT</a></li> 
+    </ul> 
+  </div> 
+</div> -->
+
+
+
+
+<div class="cmn2all">
+<div class="container-fluid homePageIMage">
+    <div class="row imageContent">
+        <h3 style="font-family:'Roboto', sans-serif;">GO PLACES WITH EMPTY POCKETS!</h3>
+        <p>Send, request & pay money with UPI. <br>Grab exclusive student benefits from brands.</p>
+
+        <a href=""><img class="play_store"></a>      
+    </div>
+</div>
+</div>
+
+
+
+<div class="container htm13h">
+  <div class="item">
+    <h3>UPI PAYMENTS & STUDENT DISCOUNTS</h3>
+  </div>
+</div>
+<div class="container htm13">
+  <div class="item item1">
+
+          <table>
+            <tr>
+              <td><div><img class="Fast_svg" src="/images/homesvgn/Fast.svg"></div></td>
+              <td>
+                <div>
+                  <h4>Fast UPI payments</h4>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <table class="mt">
+            <tr>
+              <td><div><img class="Mortar_svg" src="/images/homesvgn/Student Mortar.svg"></div></td>
+              <td>
+                <div>
+                  <h4>Exclusive student benefits</h4>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <table class="mt">
+            <tr>
+              <td><div><img class="Split_svg" src="/images/homesvgn/Split.svg"></div></td>
+              <td>
+                <div>
+                  <h4>Track, split & settle expenses</h4>
+                </div>
+              </td>
+            </tr>
+          </table>
+  </div>
+  <div class="item item2">
+        <!-- <div class="container_2">
+          <div class="css-container">
+            <div class="css-carousel" id="carset001">
+              <img class="css-img" src="/images/homesvgn/Screen 4.svg">
+              <img class="css-img" src="/images/homesvgn/Screen 1.svg">
+              <img class="css-img" src="/images/homesvgn/Screen 2.svg">
+              <img class="css-img" src="/images/homesvgn/Screen 3.svg">
+            </div>
+          </div>
+        </div> -->
+
+
+        <div id="Carousel" class="carousel slide" data-ride="carousel" role="listbox">
+          <div class="container_2">
+            <ol class="carousel-indicators cslind" style="width: 100px; display: block;">
+              <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+              <li data-target="#Carousel" data-slide-to="1"></li>
+              <li data-target="#Carousel" data-slide-to="2"></li>
+              <li data-target="#Carousel" data-slide-to="3"></li>
+            </ol>
+            
+
+            <div class="carousel-inner" id="blue">
+              <!-- Indicators -->
+
+              <div class="item active">
+                <img src="images/homesvgn/Screen 1.svg" class="img-responsive">
+              </div>
+              <div class="item">
+                <img src="images/homesvgn/Screen 2.svg" class="img-responsive">
+              </div>
+              <div class="item">
+                <img src="images/homesvgn/Screen 3.svg" class="img-responsive">
+              </div>
+              <div class="item">
+                <img src="images/homesvgn/Screen 4.svg" class="img-responsive">
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2 id="event"></h2>
+
+
+  </div>
+</div>
+<div class="container htm13i">
+  <div class="item">
+    <img class="bus_stop">
+  </div>
+</div>
+<hr class="htm13hr">
+
+
+
+
+<div class="container htm12h">
+  <div class="item">
+    <h3>START MAKING UPI PAYMENTS</h3>
+  </div>
+</div>
+<div class="container htm12">
+  <div class="item item1">
+
+          <table>
+            <tr>
+              <td><div><img src="/images/homesvgn/Create.svg"></div></td>
+              <td>
+                <div>
+                  <h4>Create UPI ID & UPI PIN</h4>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <table class="mt">
+            <tr>
+              <td><div><img src="/images/homesvgn/Bank.svg"></div></td>
+              <td>
+                <div>
+                  <h4>Link multiple bank accounts</h4>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <table class="mt">
+            <tr>
+              <td><div><img src="/images/homesvgn/Check balance.svg"></div></td>
+              <td>
+                <div>
+                  <h4>Check your bank account balance</h4>
+                </div>
+              </td>
+            </tr>
+          </table>
+          <table class="mt">
+            <tr>
+              <td><div><img src="/images/homesvgn/Bill.svg"></div></td>
+              <td>
+                <div>
+                  <h4>Split & settle expenses using UPI</h4>
+                </div>
+              </td>
+            </tr>
+          </table>
+  </div>
+  <div class="item item3">
+    <div>
+      <img src="/images/homesvgn/Merchant.svg">
+    </div>
+  </div>
+  <div class="item item2">
+    <div class="fr">
+        <div>
+          <h4>Send & Request Money</h4>
+          <p>Directly & instantly between bank accounts.</p>
+        </div>
+        <div class="mtr">
+          <h4>Recharges & Bill Payments</h4>
+          <p>In a few taps using UPI & get awesome deals.</p>
+        </div>
+        <div class="mtr">
+          <h4>Pay any UPI Merchant</h4>
+          <p>By scanning QR code or approving a collect request.</p>
+        </div>
+        <div class="htm12b">
+           <button id="more-button" class="hm_btn1" onclick="toggle();growDiv()" style="cursor: pointer;">Know more</button>
+          <!-- <button id="more-button" class="hm_btn1" onclick="toggle();growDiv()" style="cursor: pointer;cursor: hand;"><span class='spn'><img src="/images/homesvgn/Plus cross.svg" style="height: 25px;"></span>Know more</button> -->
+          
+          <div class="square toggle-down" onclick="toggle();growDiv()" style="cursor: pointer;">
+            <!-- <span class='spn'><img src="/images/homesvgn/Plus cross.svg" style="height: 25px;"></span> -->
+            <img src="/images/homesvgn/Plus cross.svg" id="plusid"  style="height: 25px;margin-left: 8px;">
+          </div>
+          <!-- <img src="/images/homesvgn/Plus cross.svg" id="plusid" onclick="toggle();growDiv()" style="cursor: pointer;cursor: hand; height: 25px;margin-right: 8px;"> -->
+        </div>
+         <!--  <img src="/images/homesvgn/Plus cross.svg" id="plusid" onclick="toggle();growDiv()" style="cursor: pointer;cursor: hand; height: 25px;margin-right: 8px;"> -->
+
+
+         <!-- <img src="/images/homesvgn/Plus cross.svg" id="plusid" onclick="toggle();growDiv()" style="cursor: pointer;cursor: hand; height: 25px;margin-right: 8px;"> -->
+
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="container-fluid hm_clps htm5" id="hdsh">
+ <div id='grow'>
+    <div class='measuringWrapper'>
+      <div class="text">
+        <div class="container htm23">
+          <div class="item item1">
+            <h3>Sending & Requesting Money</h3>
+              <table>
+                <tr>
+                  <td><span>1</span></td>
+                  <td>
+                    <p>Send money to a Khaalijeb user or any other
+                      UPI app user using his UPI ID.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="mt">
+                <tr>
+                  <td><span>2</span></td>
+                  <td>
+                    <p>If anyone doesn’t use a UPI app, send money
+                      using his account no. & IFSC.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="mt">
+                <tr>
+                  <td><span>3</span></td>
+                  <td>
+                    <p>With UPI, no need to share account no. & IFSC. All
+                      you need is a UPI ID.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="mt mb">
+                <tr>
+                  <td><span>4</span></td>
+                  <td>
+                    <p>All payments come, instantly & directly,
+                      in the receiver’s bank account.</p>
+                  </td>
+                </tr>
+              </table>
+          </div>
+          <div class="item item2">
+            <h3>Simplest Merchant Payments</h3>
+              <table>
+                <tr>
+                  <td><span>1</span></td>
+                  <td>
+                    <p>Pay not only at Khaalijeb’s merchants but also
+                      at other merchants accepting UPI.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="mt">
+                <tr>
+                  <td><span>2</span></td>
+                  <td>
+                    <p>No need to enter complicated card information
+                      & then wait for the OTP.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="mt">
+                <tr>
+                  <td><span>3</span></td>
+                  <td>
+                    <p>Pay merchants by approving the payment
+                      request received with your UPI PIN.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="mt mb">
+                <tr>
+                  <td><span>4</span></td>
+                  <td>
+                    <p>Scan merchant’s UPI QR code & then enter
+                      your UPI PIN to make a payment.</p>
+                  </td>
+                </tr>
+              </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container htm14">
+  <div class="item">
+    <div>
+      <img src="/images/homesvgn/Coffee Split.svg">
+    </div>
+  </div>
+  <div class="item">
+    <div class="fr">
+      <img src="/images/homesvgn/Merchant.svg">
+    </div>
+  </div>
+</div>
+<hr class="htm14hr">
+
+
+
+
+<div class="container h_eup">
+  <div class="row">
+    <h3>EXCITING STUDENT DISCOUNTS & BENEFITS</h3>
+  </div>
+</div>
+
+<div class="container-fluid htm18">
+  <div class="item item1">
+    <div>
+      <img src="images/homesvgn/Hoodie_85x83.svg">
+    </div>
+  </div>
+  <div class="item item4">
+    <div>
+      <img src="images/homesvgn/Scissors & Comb_70x74.svg">
+    </div>
+  </div>
+</div>
+
+<div class="container htm15">
+  <div class="item item1">
+    <div>
+      <h3>Grab a bit more of everything</h3>
+      <p class="mth">You plan to eat out, get a haircut, shop online or instore, or travel places, we’ve awesome deals for you.</p>
+      <p class="mt">Pizza & burger joints. Restaurants & salons. Fashion brands & Ecommerce platforms. We've covered everyone.</p>
+      <p class="mt">If you’re at school, college, or coaching institute, get the student membership & grab <strong>a bit more of everything.</strong></p>
+      <!-- <p><span class="locateuscontact"><a href="/student"/><span style="letter-spacing: 0.05em;font-size: 13px;">KNOW MORE</span></a> <i class="fa fa-caret-right fa-lg fa-2x "></i></span></p> -->
+    </div>
+    <!-- <div class="square_htm15">
+      <span class="gol"><i class="fa fa-caret-right fa-lg fa-2x "></i></span><span>Know more</span>
+      <a href="/student" class="btn"><span><i class="fa fa-caret-right fa-lg fa-x square"></i></span><div class="km">Know more</div></a>
+    </div> -->
+     <a href="/student" class="btn inv" target="_blank"><span><i class="fa fa-caret-right fa-lg fa-x square_htm15"></i></span><div class="km">Know more</div></a>
+  </div>
+  <div class="item item2">
+    <div>
+              <table>
+                <tr>
+                  <td><span class="badge xyz">Verify</span></td>
+                  <td>
+                    <p>Verify your student status using your
+                      institute ID card or Email ID. </p>
+                  </td>
+                </tr>
+              </table>
+              <table class="mt">
+                <tr>
+                  <td><span class="badge xyz">Search</span></td>
+                  <td>
+                    <p>Explore discounts & perks from the
+                      best brands & grab the one you like.</p>
+                  </td>
+                </tr>
+              </table>
+              <table class="mt">
+                <tr>
+                  <td><span class="badge xyz">Avail</span></td>
+                  <td>
+                    <p>Redeem the deal at merchant’s place
+                      & avail the benefits.</p>
+                  </td>
+                </tr>
+              </table>
+    </div>
+    
+  </div>
+  <div class="item item3">
+    <a href="/student" class="btn inv1" target="_blank"><span><i class="fa fa-caret-right fa-lg fa-x square_htm15"></i></span><div class="km">Know more</div></a>
+  </div>
+</div>
+
+<!-- <div class="container htm21">
+  <div class="item item1">
+    <div>
+      <img src="images/homesvgn/Plane_83x90.svg">
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <img src="images/homesvgn/Burger & Coffee_138x115.svg">
+    </div>
+  </div>
+  <div class="item item3">
+    <div>
+      <img src="images/homesvgn/Bags_78x80.svg">
+    </div>
+  </div>
+  <div class="item item4">
+    <div>
+      <img src="images/homesvgn/Coupons.svg">
+    </div>
+  </div>
+</div> -->
+
+<div class="container-fluid htm16">
+  <div class="item item1">
+    <div>
+      <img src="images/homesvgn/Plane_83x90.svg">
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <img src="images/homesvgn/Burger & Coffee.svg">
+    </div>
+  </div>
+  <div class="item item3">
+    <div>
+      <img src="images/homesvgn/Bags_78x80.svg">
+    </div>
+  </div>
+  <div class="item item4">
+    <div>
+      <img src="images/homesvgn/Coupons.svg">
+    </div>
+  </div>
+</div>
+
+<div class="container htm16a">
+  <div class="item item1">
+    <div>
+      <img src="images/homesvgn/Hoodie_85x83.svg">
+    </div>
+  </div>
+</div>
+
+
+<div class="container htm16b">
+  <div class="item item1">
+    <div>
+      <img src="images/homesvgn/Burger & Coffee.svg">
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <img src="images/homesvgn/Coupons.svg">
+    </div>
+  </div>
+</div>
+
+<hr>
+
+
+<div class="container h_eup">
+  <div class="row">
+    <h3>MERCHANTS ACCEPTING UPI PAYMENTS</h3>
+    <P>Make payments with Khaalijeb at merchants accepting UPI payments through any UPI apps like BHIM, PhonePe, Google Tez etc.</P>
+  </div>
+</div>
+
+
+<!-- <div class="container-fluid htm10">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 l">
+        <div class="img1">
+          <img src="/images/homesvgn/Flipkart.svg">
+          <p>Flipkart</p>
+        </div>
+        <div class="img2">
+          <img src="/images/homesvgn/Ola.svg">
+          <p>OLA</p>
+        </div>
+        <div class="img3">
+          <img src="/images/homesvgn/Myntra.svg">
+          <p>Myntra</p>
+        </div>
+        <div class="img4">
+          <img src="/images/homesvgn/BookMyShow.svg">
+          <p>BookMyShow</p>
+        </div>
+        <div class="img5">
+          <img src="/images/homesvgn/Pizza Hut.svg">
+          <p>Pizza Hut</p>
+        </div>
+    </div>
+  </div>
+</div> -->
+<div class="container htm19">
+  <div class="item item1">
+    <div class="img1">
+      <img src="/images/homesvgn/Flipkart.svg">
+      <p>Flipkart</p>
+    </div>
+  </div>
+  <div class="item item2">
+    <div class="img2">
+      <img src="/images/homesvgn/Ola.svg">
+      <p>OLA</p>
+    </div>
+  </div>
+  <div class="item item3">
+    <div class="img3">
+      <img src="/images/homesvgn/Myntra.svg">
+      <p>Myntra</p>
+    </div>
+  </div>
+  <div class="item item4">
+    <div class="img4">
+      <img src="/images/homesvgn/BookMyShow.svg">
+      <p>BookMyShow</p>
+    </div>
+  </div>
+  <div class="item item5">
+    <div class="img5">
+      <img src="/images/homesvgn/Pizza Hut.svg">
+      <p>Pizza Hut</p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container-fluid htm11">
+  <div class="row">
+    <div class="col-md-12 col-sm-12 l">
+        <div class="img1">
+          <img src="/images/homesvgn/IRCTC.svg">
+          <p>IRCTC</p>
+        </div>
+        <div class="img2">
+          <img src="/images/homesvgn/PVR.svg">
+          <p>PVR Cinemas</p>
+        </div>
+        <div class="img3">
+          <img src="/images/homesvgn/Uber.svg">
+          <p>UBER</p>
+        </div>
+        <div class="img4">
+          <img src="/images/homesvgn/CCD.svg">
+          <p>Café Coffee Day</p>
+        </div>
+        <div class="img5">
+          <img src="/images/homesvgn/redBus.svg">
+          <p>redBus</p>
+        </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container htm20">
+  <div class="item item1">
+    <div class="img1">
+        <img src="/images/homesvgn/IRCTC.svg">
+        <p>IRCTC</p>
+    </div>
+  </div>
+  <div class="item item2">
+    <div class="img1">
+        <img src="/images/homesvgn/PVR.svg">
+        <p>PVR Cinemas</p>
+    </div>
+  </div>
+  <div class="item item3">
+    <div class="img1">
+        <img src="/images/homesvgn/Uber.svg">
+        <p>UBER</p>
+    </div>
+  </div>
+  <div class="item item4">
+    <div class="img1">
+        <img src="/images/homesvgn/CCD.svg">
+        <p>Café Coffee Day</p>
+    </div>
+  </div>
+  <!-- <div class="item item5">
+    <div class="img1">
+        <img src="/images/homesvgn/redBus.svg">
+        <p>redBus</p>
+    </div>
+  </div> -->
+</div>
+
+<div style="text-align: center; margin-top: 52px; margin-bottom: 52px;">
+  <p style="font-weight: 400;font-size: 16px; letter-spacing: .03em;">...and many more</p>
+</div>
+<hr>
+
+
+
+<div class="container">
+    <div class="row homepagetopMail_header" align="center">
+        <div >
+            <h3>BE THE ONE WITH EMPTY POCKETS!</h3>
+            <p>Enter your email id or mobile number and we'll let you know when it's ready!</p>
+        </div>  
+    </div>  
+</div>
+
+<div class="container htm24" style="margin-bottom: -20px;">
+    <div class="row">
+        <div class="row-md-12 mainpagejnallotextbox">
+          <div class="mb">
+           <form name="frm01" ng-model="frm01" ng-submit="hsubmit(frm01.$valid)" ng-controller="myCtrl">
+            <input type="text"
+                   name="emailNum"
+                   class="mptbjebnoallocation" 
+                   placeholder="Email or Phone Number" 
+                   ng-model="emailNum"
+                   ng-model-options="{ updateOn: 'blur'}"
+                   ng-focus="frm01.emailNum.$setUntouched()" 
+                   ng-pattern="homeRegex"
+                   id="emailNum"
+                   onclick="txtclick()" 
+                   required>
+
+              <!-- <span ng-show="frm01.hname.$touched && frm01.hname.$error.required">Required</span> -->    
+            <button class="mpjbbuttonjnallo" type="button" ng-click="hsubmit(frm01.$valid)">SUBMIT</button>
+            <p id="ss1" style="font-size: 15px; font-weight: 400; ">
+
+            </p>
+          </form>
+         </div>
+      </div>       
+    </div>
+</div>
+<hr>
+
+
+
+
+
+<div class="container htm22">
+  <div class="item item1">
+    <div>
+      <h3>DOWNLOAD KHAALIJEB</h3>
+      <p>Be ready to experience the magic of UPI & student discounts. Khaalijeb is coming soon on Google Play store.</p>
+    </div>
+    <div class="bt">
+      <button class="rb" type="submit" style="border: 0; background: transparent;">
+        <img src="/images/homesvgn/Play Store_226x74.svg"/>
+      </button>
+      <!-- <button class="lb" type="submit" style="border: 0; background: transparent;">
+        <img src="/images/homesvgn/App Store_226x74.svg" class="ri" />
+      </button> -->
+    </div>
+  </div>
+  <div class="item item2">
+    <!-- <div class="container_2">
+      <div class="css-container">
+        <div class="css-carousel">
+          <img class="css-img" src="/images/homesvgn/Screen 4.svg">
+          <img class="css-img" src="/images/homesvgn/Screen 1.svg">
+          <img class="css-img" src="/images/homesvgn/Screen 2.svg">
+          <img class="css-img" src="/images/homesvgn/Screen 3.svg">
+        </div>
+      </div>
+    </div> -->
+
+
+
+    <div id="Carousel1" class="carousel slide" data-ride="carousel">
+      <div class="container_2">
+        <ol class="carousel-indicators cslind" style="width: 100px; display: block;">
+          <li data-target="#Carousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#Carousel1" data-slide-to="1"></li>
+          <li data-target="#Carousel1" data-slide-to="2"></li>
+          <li data-target="#Carousel1" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <!-- Indicators -->
+          
+          <div class="item active">
+            <img src="images/homesvgn/Screen 1.svg" class="img-responsive">
+          </div>
+          <div class="item">
+            <img src="images/homesvgn/Screen 2.svg" class="img-responsive">
+          </div>
+          <div class="item">
+            <img src="images/homesvgn/Screen 3.svg" class="img-responsive">
+          </div>
+          <div class="item">
+            <img src="images/homesvgn/Screen 4.svg" class="img-responsive">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+</div>
+
+<hr>
+
+
+<div class="container h_eup">
+  <div class="row">
+    <h3>KHAALIJEB FOR BUSINESS</h3>
+  </div>
+</div>
+
+<div class="container htm17">
+  <div class="item item1">
+    <div>
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <img src="images/homesvgn/Mobile Accept.svg">
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>Accept UPI payments from any UPI app
+                  like BHIM, Phonepe, Google Tez etc.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <img class="nml" src="images/homesvgn/Shopping.svg">
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>Engage with a verified student community by offering exclusive
+                  benefits.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+    </div>
+  </div>
+</div>
+
+
+<div align="center" class="htm20mb">
+  <!-- <button class="KnowMorebutton h_knb" type="button" onclick="location.href='https://khaalijeb.com/home';">KNOW MORE</button> -->
+  <a ng-click="button_click('/business')" target="_self"><button class="mpjbbuttonjnallo" type="button">KNOW MORE</button></a>
+            <p id="ss1" style="font-size: 15px; font-weight: 400; ">
+</div>
+
+
+
+
+
+
+
+
+<section class="copyright">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="footermainicon">
+                    <span class="textconnectfooter">Stay in Touch</span>
+                    <div class="social_icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/KhaaliJeb" target="_blank" class="facebookicon"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/KhaaliJeb" target="_blank" class="twittericon"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/u/0/112181609625900290821" target="_blank" class="plusicon"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="messagenintyone">
+                    <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer-container-legal">
+        <hr class="hrfooter">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footerMargin">
+            <div class="col-md-6">
+                <a ng-click="button_click('/about')" class="footeranchortag">About</a>
+                <a ng-click="button_click('/contact')" class="footeranchortag">Contact</a>
+                <a href="#" class="footeranchortag">Sitemap</a>
+            </div>
+            <div class="col-md-6">
+             <div class="footercompanyname">
+                <a ng-click="button_click('/legal')" class="footeranchortag">Legal</a>
+                <a href="" class="footeranchortag" style=" pointer-events: none; cursor: default;">INKDROPS LABS PVT LTD &copy; 2018</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+

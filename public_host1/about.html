@@ -1,0 +1,184 @@
+﻿
+<div class="header-wrap hideheader" id="headerWrap" ng-controller="hideHeaderCtrl">
+<nav class="navbar navbar-default legalnavbartop mainmenu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button id="burgbtn"
+             type="button" 
+             class="navbar-toggle legaltogglebutton" 
+             data-toggle="collapse" 
+             data-target=".navbar-collapse" 
+              ng-click='burgebtn()'
+              ng-show='burgbtn'>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+      </button>
+      <button id="crsbtn" 
+              type="button" 
+              class="navbar-toggle legaltogglebutton" 
+              data-toggle="collapse" 
+              data-target=".navbar-collapse"
+              ng-click='crosbtn()' 
+              ng-show="crsbtn" >
+                                          <!-- <i class="fa fa-times" 
+                                             aria-hidden="true" 
+                                             style="font-size: 24px; font-weight: 300; color: #777;">
+                                               
+                                          </i> -->
+                                          <img src="images/homesvgn/Cancel.svg" style="height: 20px;margin-top: 4px;">
+      </button>
+      <div class="legal-img-logo">
+        <a ng-href="/home" ng-click="button_click('/home')"><img class="logo_all" style="width:60px; height:60px; cursor: pointer;" target="_self"></a>
+      </div>
+    </div>
+
+    <div class="box effect1" ng-if="clpsef">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <li><a ng-click="button_click('/home')"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li>
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-click="button_click('/home')" type="button">HOME</a></li>
+        <li><a ng-click="button_click('/about')" type="button" style="color: #ef5350 !important;">ABOUT</a></li>
+        <li><a ng-click="button_click('/upi')" type="button">UPI</a></li>
+        <li><a ng-click="button_click('/student')">STUDENT</a></li>
+        <li><a ng-click="button_click('/business')">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked()" target="_blank">BLOG</a></li>
+        <li><a ng-click="button_click('/contact')">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="boxmain">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <!-- <li><a ng-href="/home" ng-click="button_click('/home')" target="_self"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li> -->
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-href="/home" ng-click="button_click('/home')" type="button" target="_self">HOME</a></li>
+        <li><a ng-href="/about" ng-click="button_click('/about')" type="button" style="color: #ef5350 !important;" target="_self">ABOUT</a></li>
+        <li><a ng-href="/upi" ng-click="button_click('/upi')" type="button" target="_self">UPI</a></li>
+        <li><a ng-href="/student" ng-click="button_click('/student')" target="_self">STUDENT</a></li>
+        <li><a ng-href="/business" ng-click="button_click('/business')" target="_self">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked2()" class="blogcls" onmouseover="chred(this)" onmouseout="chblack(this)" target="_blank">BLOG</a></li>
+        <li><a ng-href="/contact" ng-click="button_click('/contact')" target="_self">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</nav>
+</div>
+
+
+<div class="container abt11 cmn2all">
+    <div class="row aboutusProccessIcon">
+        <img class="abtimg img-responsive">
+    </div>
+    
+</div>
+
+
+<div class="container abt10">
+    <div class="row aboutusContant">
+
+        <h4>It started with a simple vison...</h4>
+
+        <!-- <P class="text-justify">
+          To take cashless payments everywhere. Even at a small street-stall. Ever since then we have been rethinking the way businesses and consumers
+          interact and transact. And one fine day, we bumped into the idea of crafting an innovative student loyalty membership program.   
+        </P> 
+
+        <div class="aboutCategoryContant">
+
+        <p class="text-justify">
+            <strong>For General Consumers: </strong>Paying at a store gets faster, safer, simpler and extra rewarding. Bill Payments become completely hassle-free. And sending & requesting money get delightful and a lot more fun.
+        </p>
+
+        <p class="text-justify">
+            <strong>For Students: </strong>We are designing an exciting loyalty program that entitles them to enjoy exclusive benefits from all kinds of brands and merchants.
+        </p>
+
+        <p class="text-justify">
+            <strong>For Businesses: </strong>We are building and innovative platforms that simplify the way they conduct commerce. We enable them to affordably
+            and efficiently accept cashless payments, win customer loyalty, advertise and promote their businesses.
+        </p>
+
+        <p class="text-justify" style="margin-top: 35px;">
+            Transactions and Interactions between merchants and consumers should be simple, delightful and fun. But they have become way too complicated. We’re a team of engineers and designers, dreamers and doers, working hard to simplify commerce for everyone. 
+        </p>  -->
+        <p>To take digital payments everywhere. Even at a small street-stall. Ever since then we have been rethinking the way businesses and consumers interact & transact.</p> 
+
+        <p class="mt">We believe UPI has the potential to revolutionize digital payments & make it enormously widespread. Thus, we joined hands with UPI to change the way we transact & manage money.</p>
+
+        <p class="mt">Around 20% percent of our country’s population are students, but there’s never been a recognized loyalty program for our student community. We aspire to be the first one.</p>
+
+        <p class="mt">With our student loyalty program, we aim to redefine the way businesses & students engage amongst themselves.</p>
+
+        <p class="mt">With aim of “simple transactions & delightful interactions”, we’re a team of engineers & designers, dreamers & doers, working hard to simplify commerce for everyone.</p>    
+    </div>       
+</div>
+
+<!-- =========================
+ FOOTER
+ ============================== -->
+
+ <section class="copyright cprt">
+    <div class="container mtl">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="footermainicon">
+                    <span class="textconnectfooter">Stay in Touch</span>
+                    <div class="social_icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/KhaaliJeb" target="_blank" class="facebookicon"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/KhaaliJeb" target="_blank" class="twittericon"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/u/0/112181609625900290821" target="_blank" class="plusicon"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 r">
+                <!-- <div class="messagenintyone">
+                    <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a>
+                </div> -->
+                <div class="abt_im">
+                  <h3>DOWNLOAD NOW</h3>
+                  <div class="_im">
+                  <a href="#" type="button"><img class="im1" src="/images/svgs1/Google Play.svg" /></a>
+                  <a href="#" type="button"><img class="im2" src="/images/svgs1/App Store.svg" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer-container-legal">
+        <hr class="hrfooter">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footerMargin">
+            <div class="col-md-6">
+                <a ng-click="button_click('/about')" class="footeranchortag" style="color: #ef5350 !important;">About</a>
+                <a ng-click="button_click('/contact')" class="footeranchortag">Contact</a>
+                <a href="#" class="footeranchortag">Sitemap</a>
+            </div>
+            <div class="col-md-6">
+             <div class="footercompanyname">
+                <a ng-click="button_click('/legal')" class="footeranchortag">Legal</a>
+                <a href="" class="footeranchortag" style=" pointer-events: none; cursor: default;">INKDROPS LABS PVT LTD &copy; 2018</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+

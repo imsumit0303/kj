@@ -1,0 +1,438 @@
+
+
+<div class="header-wrap hideheader" id="headerWrap" ng-controller="hideHeaderCtrl">
+<nav class="navbar navbar-default legalnavbartop mainmenu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button id="burgbtn"
+             type="button" 
+             class="navbar-toggle legaltogglebutton" 
+             data-toggle="collapse" 
+             data-target=".navbar-collapse" 
+              ng-click='burgebtn()'
+              ng-show='burgbtn'>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+      </button>
+      <button id="crsbtn" 
+              type="button" 
+              class="navbar-toggle legaltogglebutton" 
+              data-toggle="collapse" 
+              data-target=".navbar-collapse"
+              ng-click='crosbtn()' 
+              ng-show="crsbtn" >
+                                          <!-- <i class="fa fa-times" 
+                                             aria-hidden="true" 
+                                             style="font-size: 24px; font-weight: 300; color: #777;">
+                                               
+                                          </i> -->
+                                          <img src="images/homesvgn/Cancel.svg" style="height: 20px;margin-top: 4px;">
+      </button>
+      <div class="legal-img-logo">
+        <a ng-href="/home" ng-click="button_click('/home')"><img class="logo_all" style="width:60px; height:60px; cursor: pointer;" target="_self"></a>
+      </div>
+    </div>
+
+    <div class="box effect1" ng-if="clpsef">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <li><a ng-click="button_click('/home')"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li>
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-click="button_click('/home')" type="button">HOME</a></li>
+        <li><a ng-click="button_click('/about')">ABOUT</a></li>
+        <li><a ng-click="button_click('/upi')">UPI</a></li>
+        <li><a ng-click="button_click('/student')">STUDENT</a></li>
+        <li><a ng-click="button_click('/business')">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked()" target="_blank">BLOG</a></li>
+        <li><a ng-click="button_click('/contact')" style="color: #ef5350 !important;">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="boxmain">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <!-- <li><a ng-href="/home" ng-click="button_click('/home')" target="_self"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li> -->
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-href="/home" ng-click="button_click('/home')" type="button" target="_self">HOME</a></li>
+        <li><a ng-href="/about" ng-click="button_click('/about')" target="_self">ABOUT</a></li>
+        <li><a ng-href="/upi" ng-click="button_click('/upi')" target="_self">UPI</a></li>
+        <li><a ng-href="/student" ng-click="button_click('/student')" target="_self">STUDENT</a></li>
+        <li><a ng-href="/business" ng-click="button_click('/business')" target="_self">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked2()" class="blogcls" onmouseover="chred(this)" onmouseout="chblack(this)" target="_blank">BLOG</a></li>
+        <li><a ng-href="/contact" ng-click="button_click('/contact')" style="color: #ef5350 !important;" target="_self">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</nav>
+</div>
+
+
+
+
+
+
+<div class="container cntc cmn2all">
+<div class="container-fluid iconcontactcontainer mtb">
+    <div class="row">
+        <div class="col-md-12 ">
+            <div style="padding-bottom: 0px;"><img class="hello_chat" height="65px"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div class="container contactsecondsec con10">
+    <div class="row">
+        <div class="col-md-5 col-md-offset-1 ">
+            <div class="contactpageformsend">
+                <div class="row paddingcontactus">
+                    <div class="col-md-5">
+                        <h3>Customer Support :</h3>
+                    </div>
+                    <div class="col-md-6 paddingcontactus2">
+                        <a href="mailto:legal@khaalijeb.com" class="contactusmail">support@khaalijeb.com</a>
+                    </div>
+                </div>
+                <div class="row paddingcontactus">
+                    <div class="col-md-5">
+                        <h3>General Information :</h3>
+                    </div>
+                    <div class="col-md-6 paddingcontactus2">
+                        <a href="mailto:legal@khaalijeb.com" class="contactusmail">info@khaalijeb.com </a>
+                    </div>
+                </div>
+
+                <div class="row paddingcontactus">
+                    <div class="col-md-5 ">
+                        <h3>Business Information :</h3>
+                    </div>
+                    <div class="col-md-6 paddingcontactus2">
+                        <a href="mailto:legal@khaalijeb.com" class="contactusmail">partners@khaalijeb.com </a>
+                    </div>
+                </div>
+                <div class="row paddingcontactus3">
+                    <div class="col-md-5 ">
+                        <h3>Registered Office :</h3>
+                    </div>
+                    <div class="col-md-6 paddingcontactus2">
+                        <div>Inkdrops Labs Pvt. Ltd. <br>
+                        #83, Pepideas Business<br>
+                        Center, 5th Block,<br>
+                        Koramangala,<br>
+                        Bengaluru, Karnataka</div>
+                    </div>
+                </div>
+                <div class="row paddingcontactus">
+                        <div class="col-md-5">
+
+                        </div>
+                        <div class="col-md-6">    
+                                <div class="locateuscontact"><a href="https://www.google.com/maps/place/12%C2%B055'55.7%22N+77%C2%B036'55.5%22E/@12.9321389,77.6148695,19z/data=!3m1!4b1!4m6!3m5!1s0x0:0x0!7e2!8m2!3d12.9321467!4d77.6154115" target="_blank">LOCATE US</a> <i class="fa fa-caret-right fa-lg "></i></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-md-5 col-md-offset-1">
+            <div class="sec2contactpage">
+                <h3>Send us a Message,&nbsp;<span>we'll write back!</span></h3>
+                <div class="form-contact-in">
+                  <form name="cfrm01" ng-model="cfrm01" ng-submit="csend(cfrm01.$valid)" ng-controller="myCtrl">
+                    <input name="cname" 
+                           type="text" 
+                           placeholder="Name"
+                           tabindex="autofocus"  
+                           class="contactusform" 
+                           id = 'cname'
+                           ng-minlength="3"
+                           ng-maxlength="15"
+                           ng-model="cname"
+                           ng-model-options="{ updateOn: 'blur'}"
+                           ng-focus="cfrm01.cname.$setUntouched()"
+                           required/>
+                    <input name="cemail" 
+                           type="email" 
+                           placeholder="Email" 
+                           class="contactusform" 
+                           id = 'cemail'
+                           ng-model='cemail'
+                           ng-model-options="{ updateOn: 'blur'}" 
+                           ng-focus="cfrm01.cemail.$setUntouched()"
+                           required />
+                    <input type="number"
+                           name="cphone" 
+                           placeholder="Phone Number" 
+                           ng-minlength="10" 
+                           class="contactusform" 
+                           id = 'cphone'
+                           ng-pattern="mobRegex"
+                           ng-model="cphone" 
+                           ng-model-options="{ updateOn: 'blur'}"
+                           ng-focus="cfrm01.cphone.$setUntouched()"
+                           required />
+                    <textarea name="cmessage" 
+                              cols="20" 
+                              rows="4" 
+                              class="contactusform" 
+                              placeholder="Message" 
+                              id ='cmessage'
+                              ng-model="cmessage"/></textarea>
+                    <div class="buttonsec2contactpage">
+                        <button type="button" class="button-contactform2"  ng-click="csend(cfrm01.$valid)"> SEND</button>
+                    </div>
+                    <p id="sss1c">
+                    </p>
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
+
+<div class="container con11">
+  <div class="item item1">
+    
+      <p>Customer Support :<p>
+    
+    
+      <p class="mt">General Information :</p>
+    
+    
+      <p class="mt">Business Information :</p>
+    
+   
+      <div class="mtl"><p>Registered Office :</p></div>
+    
+  </div>
+  <div class="item item2">
+    <p><a href="mailto:legal@khaalijeb.com" class="contactusmail">support@khaalijeb.com</a></p>
+    <p class="mt"><a href="mailto:legal@khaalijeb.com" class="contactusmail">info@khaalijeb.com </a></p>
+    <p class="mt"><a href="mailto:legal@khaalijeb.com" class="contactusmail">partners@khaalijeb.com </a></p>
+    <div class="mtl">
+      <p>
+        Inkdrops Labs Pvt. Ltd. <br>
+        #83, Pepideas Business<br>
+        Center, 5th Block,<br>
+        Koramangala,<br>
+        Bengaluru, Karnataka
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="con13" style="text-align: center;margin-top: 80px;">
+  <h3 style="font-size: 24px;">Send us a Message,&nbsp;<span style="font-weight: 300">we'll write back!</span></h3>
+</div>
+
+<div class="container con12">
+ <div class="sec2contactpage">
+                
+                <div class="form-contact-in">
+                  <form name="cfrm01" ng-model="cfrm01" ng-submit="csend(cfrm01.$valid)" ng-controller="myCtrl">
+                    <input name="cname" 
+                           type="text" 
+                           placeholder="Name"
+                           tabindex="autofocus"  
+                           class="contactusform" 
+                           id = 'cname'
+                           ng-minlength="3"
+                           ng-maxlength="15"
+                           ng-model="cname"
+                           ng-model-options="{ updateOn: 'blur'}"
+                           ng-focus="cfrm01.cname.$setUntouched()"
+                           required/><br>
+                    <input name="cemail" 
+                           type="email" 
+                           placeholder="Email" 
+                           class="contactusform" 
+                           id = 'cemail'
+                           ng-model='cemail'
+                           ng-model-options="{ updateOn: 'blur'}"
+                           ng-focus="cfrm01.cemail.$setUntouched()"
+                           required /><br>
+                    <input type="number"
+                           name="cphone" 
+                           placeholder="Phone Number" 
+                           ng-minlength="10" 
+                           class="contactusform" 
+                           id = 'cphone'
+                           ng-pattern="mobRegex"
+                           ng-model="cphone" 
+                           ng-model-options="{ updateOn: 'blur'}"
+                           ng-focus="cfrm01.cphone.$setUntouched()"
+                           required /><br>
+                    <textarea name="cmessage" 
+                              cols="20" 
+                              rows="4" 
+                              class="contactusform" 
+                              placeholder="Message" 
+                              id ='cmessage'
+                              ng-model="cmessage"/></textarea>
+                    <div class="buttonsec2contactpage">
+                        <button type="button" class="button-contactform2" id = 'csendButton' ng-click="csend(cfrm01.$valid)"> SEND</button>
+                    </div>
+                    <p id="sss1c">
+                    </p>
+                </form>
+              </div>
+            </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="copyright" > -->
+    <!-- <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footermainicon">
+                    <span class="textconnectfooter">Stay in Touch</span>
+                    <div class="social_icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/KhaaliJeb" target="_blank" class="facebookicon"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/KhaaliJeb" target="_blank" class="twittericon"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/u/0/112181609625900290821" target="_blank" class="plusicon"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="abt_im">
+                  <h3>DOWNLOAD NOW</h3>
+                  <div class="_im">
+                  <a href="#" type="button"><img class="im1" src="/images/svgs1/Google Play.svg" /></a>
+                  <a href="#" type="button"><img class="im2" src="/images/svgs1/App Store.svg" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+
+    <!-- <div class="container-fluid footer-container-legal">
+        <hr class="hrfooter">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footerMargin">
+            <div class="col-md-6">
+                <a href="/about" class="footeranchortag">About</a>
+                <a href="/contact" class="footeranchortag">Contact</a>
+                <a href="#" class="footeranchortag">Sitemap</a>
+            </div>
+            <div class="col-md-6">
+             <div class="footercompanyname">
+                <a href="/legal" class="footeranchortag">Legal</a>
+                <a href="" class="footeranchortag" style=" pointer-events: none; cursor: default;">INKDROPS LABS PVT LTD &copy; 2017</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- </section> -->
+
+
+
+
+<!-- <div class="container-fluid footer-container-legal mtop">
+        <hr class="hrfooter">
+    </div>
+
+    <div class="container-fluid mbot">
+        <div class="row footerMargin">
+            <div class="col-md-6">
+                <a href="/about" class="footeranchortag">About</a>
+                <a href="/contact" class="footeranchortag">Contact</a>
+                <a href="#" class="footeranchortag">Sitemap</a>
+            </div>
+            <div class="col-md-6">
+             <div class="footercompanyname">
+                <a href="/legal" class="footeranchortag">Legal</a>
+                <a href="" class="footeranchortag" style=" pointer-events: none; cursor: default;">INKDROPS LABS PVT LTD &copy; 2017</a>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<section class="copyright cprt2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="footermainicon">
+                    <span class="textconnectfooter"><!-- Stay in Touch --></span>
+                    <div class="social_icons">
+                       <!--  <ul>
+                            <li><a href="https://www.facebook.com/KhaaliJeb" target="_blank" class="facebookicon"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/KhaaliJeb" target="_blank" class="twittericon"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/u/0/112181609625900290821" target="_blank" class="plusicon"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul> -->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="messagenintyone">
+                    <!-- <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer-container-legal">
+        <hr class="hrfooter">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footerMargin">
+            <div class="col-md-6">
+                <a ng-click="button_click('/about')" class="footeranchortag">About</a>
+                <a ng-click="button_click('/contact')" class="footeranchortag" style="color: #ef5350 !important;">Contact</a>
+                <a href="#" class="footeranchortag">Sitemap</a>
+            </div>
+            <div class="col-md-6">
+             <div class="footercompanyname">
+                <a ng-click="button_click('/legal')" class="footeranchortag">Legal</a>
+                <a href="" class="footeranchortag" style=" pointer-events: none; cursor: default;">INKDROPS LABS PVT LTD &copy; 2018</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+

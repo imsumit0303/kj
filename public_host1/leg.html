@@ -1,0 +1,448 @@
+<!-- <nav class="navbar navbar-default legalnavbartop mainmenu nav-down nav-up"> -->
+<nav class="navbar navbar-default navbar-fixed-top legalnavbartop" style="padding-bottom: 0; position: fixed;">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button id="burgbtn"
+             type="button" 
+             class="navbar-toggle legaltogglebutton" 
+             data-toggle="collapse" 
+             data-target=".navbar-collapse" 
+              ng-click='burgebtn()'
+              ng-show='burgbtn'>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+      </button>
+      <button id="crsbtn" 
+              type="button" 
+              class="navbar-toggle legaltogglebutton" 
+              data-toggle="collapse" 
+              data-target=".navbar-collapse"
+              ng-click='crosbtn()' 
+              ng-show="crsbtn" >
+                                          <!-- <i class="fa fa-times" 
+                                             aria-hidden="true" 
+                                             style="font-size: 24px; font-weight: 300; color: #777;">
+                                               
+                                          </i> -->
+                                          <img src="images/homesvgn/Cancel.svg" style="height: 20px;margin-top: 4px;">
+      </button>
+      <div class="legal-img-logo">
+        <a ng-href="/home" ng-click="button_click('/home')"><img class="logo_all" style="width:60px; height:60px; cursor: pointer;" target="_self"></a>
+      </div>
+    </div>
+    <div class="box effect1" ng-if="clpsef">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml" style="z-index: 900">
+      <ul class="nav navbar-nav hidenForMobile">
+        <li></li>
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; z-index: 3000">
+        <li><a ng-click="button_click('/home')" target="_top" type="button">HOME</a></li>
+        <li><a ng-click="button_click('/about')" target="_top">ABOUT</a></li>
+        <li><a ng-click="button_click('/upi')" target="_top">UPI</a></li>
+        <li><a ng-click="button_click('/student')" target="_top">STUDENT</a></li>
+        <li><a ng-click="button_click('/business')"  target="_top">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked()" target="_blank">BLOG</a></li>
+        <li><a ng-click="button_click('/contact')" target="_top">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="boxmain">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml" style="z-index: 900">
+      <ul class="nav navbar-nav hidenForMobile">
+        <!-- <li><a ng-href="/home" ng-click="button_click('/home')" target="_self"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li> -->
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-click="button_click('/home')" type="button">HOME</a></li>
+        <li><a ng-click="button_click('/about')">ABOUT</a></li>
+        <li><a ng-click="button_click('/upi')">UPI</a></li>
+        <li><a ng-click="button_click('/student')">STUDENT</a></li>
+        <li><a ng-click="button_click('/business')">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked2()" class="blogcls" onmouseover="chred(this)" onmouseout="chblack(this)" target="_blank">BLOG</a></li>
+        <li><a ng-click="button_click('/contact')">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</nav>
+
+
+
+<div class="container centerinnerlegal">
+  <ul class="nav nav-tabs nav-tabs-legal addmargin anchormt" role="tablist">
+    <li class="active rmvlegal" id="rmvlegal1"><a aria-controls="terms" data-toggle="tab" href="#terms" target="_blank" onclick="terms(); termNew();">Terms</a></li>
+    <li class="rmvlegal" id="rmvlegal2"><a aria-controls="privacy" data-toggle="tab" href="#privacy" onclick="privacy()" target="_blank">Privacy</a></li>
+    <li role="presentation" style="float: right; padding-right: 35px; "><img class="svg" src="images/hammer.svg" height="37px" style="padding-bottom: 5px;"></li>
+  </ul>
+
+
+
+  <div class="tab-content">
+    <div id="terms" class="tab-pane fade in active">
+      <h4>Terms of Service</h4>
+                    <h6 style="margin-bottom: 32px; margin-top: 28px;"> <strong>Last Updated on 7th August, 2017.</strong></h6>
+
+                    <p class="text-justify">This is an agreement <strong>(“Agreement”)</strong> between Inkdrops Labs Private Limited 
+                      <strong>("KHAALIJEB", "We", "Us" and "Our")</strong>, a company incorporated under the Companies Act, 
+                      2013 and having its Registered Office at 222 NurtureLabz, IndiraNagar Double Road, Domlur II Stage, Bangalore – 560071, 
+                      and you <strong>("You" or "User" or “Your” or “Yourself”)</strong>, a customer or buyer or consumer or merchant 
+                    or seller or biller,or any other person who accesses or uses Our Services or Platforms.</p>
+
+                    <p class="text-justify">KHAALIJEB owns and operates the website
+                     <a href='https://www.khaalijeb.com' target="_blank" style="text-decoration: underline; color: black;">www.khaalijeb.com</a>, 
+                     KHAALIJEB’s applications and other KHAALIJEB’s services 
+                     <strong>(collectively, Our "Services" or “Platforms”)</strong>.</p>
+
+                     <p class="text-justify">Please carefully read the terms and conditions set forth below. By accessing or using Our Services or Platforms, You are agreeing to these Terms and Conditions, concluding a legally binding contract with Us. You may not access or use Our Services if You don’t agree to any provision of this Agreement. </p>
+
+                     <h5>OUR SERVICES</h5>
+
+                     <p class="text-justify">KHAALIJEB is a payment solution aggregator that enables payment through payment instruments including but not limited to UPI, Debit Cards, Credit Cards, and mobile wallets. KHAALIJEB may also provide several value added services to the Users like bill payments, coupons and deals from a number of online and offline merchants.</p>
+
+                     <p class="text-justify">KHAALIJEB also provides various services to merchants and businesses like enabling them to accept electronic payments, helping them increase their businesses, or advertising their products or services through electronic means.</p>
+
+                     <p class="text-justify">You agree and understand that when You acquire a Product or Service from a merchant using KHAALIJEB payment service or using the merchant’s coupon listed on Our Platforms, We are not a party to the contract between You and the Merchant. Furthermore, We are under no obligation to monitor the merchant's service used by You; the merchant alone will be responsible for all obligations under the contract including without limitation warranties or guarantees. Any dispute with or complaint against any merchant must be directly resolved with the Merchant. It is clarified that We shall not be responsible or liable for any deficiency in Products or Services purchased using KHAALIJEB. </p>
+
+                     <p class="text-justify">
+                      KHAALIJEB enables payments through UPI, Credit Cards, Debit Cards, Net banking and mobile wallets which are processed through secure and certified payment institutions including without limitation banks, and payment gateways. 
+                    </p>
+
+                    <h5>UNIFIED PAYMENT INTERFACE ("UPI")</h5>
+
+                    <p class="text-justify">The Unified Payment Interface (UPI) is a payment service platform developed by National Payments Corporation of India (NPCI), an umbrella organization incorporated in 2008 and acting as the settlement/clearing house/regulatory agency for UPI services. KHAALIJEB has partnered with X bank limited to facilitate UPI payments. KHAALIJEB doesn’t receive, hold, or transmit the funds. These processes go through Banks and NPCI. KHAALIJEB provides the software platform that allows User to send fund transfer instructions to the Bank through UPI.
+                    </p>
+
+                    <p>KHAALIJEB facilitates both types of payment: customer to customer (P2P) and customer to merchant (P2M).</p>
+
+                    <h5>UPI Registration and Key Points:</h5>
+
+                    <p class="text-justify">You first need to create a KHAALIJEB account by registering Yourself on a KHAALIJEB Platform or through a third party partner platform. Thereafter You can register for UPI through a KHAALIJEB mobile application or a third party partner mobile application installed on Your smartphone. 
+                    </p>
+
+                    <p class="text-justify">After opening the application on Your smartphone, You need to register by entering Your mobile number. Make sure it’s the number currently linked to Your bank account and currently active on the smartphone from which You are accessing the mobile application. Your mobile device details and mobile number will be registered by our UPI bank partner X bank by sending an SMS from Your number. You need to authorize the SMS. SMS charges as per Your mobile operator may be charged. Thereafter, You will see an interface asking You to select Your bank. 
+                    </p>
+
+                    <p style="font-weight: 500 !important;">Selecting Your bank :</p>
+
+                    <ul class="text-justify legallist">
+                      <li> Select Your bank from the list of UPI-member banks listed on our App. The list comprises all the banks connected to the UPI Platform. NPCI may update the list from time to time.
+                      </li>
+
+                      <li>
+                        If the name of Your bank does not appear in the list, You can still add Your bank by providing the bank account number and the IFSC code. You will not be able send money to someone or make payment to a merchant through UPI from Your bank account, but You can receive funds from others into Your bank account.
+                      </li>
+                    </ul>
+
+                    <p class="text-justify">
+                      Please note that Your mobile number should be registered with Your bank. If Your mobile number is not registered, then You will not be able to avail the UPI services. Please first register Your mobile number with the Bank.
+                    </p>
+
+                    <p class="text-justify">After You select Your bank from the list, You will see the last few digits of Your bank account number(s) registered with Your mobile number. You need to select the bank account which You wish to link with KHAALIJEB.</p>
+
+                    <p class="text-justify">
+                      Mobile Personal Identification Number <strong>(MPIN):</strong> If You already have the 4-6 digit MPIN for Your bank account, then You can start transacting through UPI. If You do not remember the MPIN, You can click on “Forgot MPIN” and set a new one by providing the card number and expiry date of the debit card linked with Your bank account. Your mobile number will be OTP verified by Your bank. If the verification is successful, You will be taken to the NPCI page, to set a new MPIN. You can change Your MPIN anytime by clicking on “Change MPIN”. You can then set a new MPIN by providing the old and new MPINs on NPCI page. If You have never set the MPIN before, then You will see a “Set MPIN” option. Please click on the link and set the MPIN by providing the card number and expiry date of the debit card linked to Your bank account. Your mobile number will be OTP verified by Your bank. If the verification is successful, You will be taken to the NPCI page, to set a new MPIN. After having Your MPIN, You can start transacting through UPI.
+                    </p>
+
+                    <p>You need to authorize every UPI payment transaction by providing the MPIN.</p>
+
+                    <p class="text-justify">
+                      You are solely responsible to keep Your OTP, MPIN and bank account related details confidential. Sharing such information with others may lead to unauthorized usage, for which KHAALIJEB shall not be responsible.
+                    </p>
+
+                    <p>You are solely responsible for linking Your correct bank account.</p>
+
+                    <p>Since Your mobile number is treated as the primary identifier, Your mobile number needs to be updated with the bank in case of any changes.</p>
+
+                    <p class="text-justify">If You change the mobile number registered with Your KHAALIJEB Account, You will have to re-register Your new mobile number with KHAALIJEB. To re-activate UPI services, You first need to register Your new mobile number with Your bank and then link Your bank account all over again with KHAALIJEB.</p>
+
+                    <p>Per Transaction limit set my NPCI for UPI is INR 1 lakhs. There is no monthly limit.</p>
+
+                    <p>Your bank may charge you a nominal transaction fee for UPI transaction. Please check with Your bank for any such charges.</p>
+
+
+                    <h5>COUPON REDEMPTION</h5>
+
+                    <p class="text-justify">Coupon redemption is purely subjected to standard and specified terms and conditions mentioned by the respective retailer or merchant. Coupons are issued on behalf of the respective retailer. Hence, any damages, injuries, losses incurred by the User by using the coupon is not the responsibility of KHAALIJEB
+                    </p>
+
+                    <h5>PRICING</h5>
+
+                    <p class="text-justify">Membership, usage and access of KHAALIJEB are free for Users. KHAALIJEB does not charge its Users any fee for creating an Account or use of Services. KHAALIJEB reserves the right to change its fee policy from time to time. In particular, KHAALIJEB may at its sole discretion introduce new Services and modify some or all of the existing Services. In such an event, KHAALIJEB reserves the right to introduce fees for the new Services offered or amend or introduce fees for existing Services, as the case may be. Changes to the fee policy shall be posted on Our Platforms and such changes shall automatically become effective immediately after they are posted. Unless otherwise stated, all fees shall be quoted in Indian Rupees.
+                    </p>
+
+                    <p class="text-justify">The financial institution that issues Your payment instrument (like Bank issuing UPI) may charge a fee in connection with the debiting or charging of the Payment Instrument resulting from the Payment Transaction.
+                    </p>
+
+                    <p class="text-justify">KHAALIJEB may charge the merchants and businesses for providing various Services, and the pricing structure for a particular service would be as per its Agreement.
+                    </p>
+
+                    <h5>REGISTRATION</h5>
+
+                    <p class="text-justify">In order to use the full spectrum of Our Services, You need to register with Us through Our Platforms or any third party merchant platform using Our Services. You represent and warrant that all the information provided by You to Us is current, accurate, and complete, and that You will maintain the accuracy and completeness of the information on a prompt, timely basis. We may suspend Your Account if it‘s found to contain incorrect or outdated information.
+                    </p>
+
+                    <h5>CONSENT TO ELECTRONIC COMMUNICATIONS</h5>
+
+                    <p class="text-justify">By registering with Us, You permit Us to send electronic communications, notices, advertisements and other information through emails, SMS or other electronic means. Electronic communications shall be deemed to have been received by You when We send the electronic communication to Your email address or mobile number registered with Us, or when We post the electronic communication on Our Platforms. In order to receive and view such communications, You must have proper access to Internet, Your KHAALIJEB account, Your mobile number, Your email address etc. You can withdraw Your consent at any time by contacting Us, but We reserve the right to terminate Your account upon such withdrawal. Withdrawal of Your consent will not affect the legal validity and enforceability of any notice, statement or disclosure previously received electronically. 
+                    </p>
+
+                    <h5>REFUND AND ERRORNEOUS TRANSACTIONS</h5>
+
+                    <p class="text-justify">All payments on KHAALIJEB for services including but not limited to P2P transfers, Merchant Payments, Bill Payments, Coupons or Deals purchases are final. Such transactions cannot be refunded or cancelled once initiated.
+                    </p>
+
+                    <p class="text-justify">If You erroneously make a payment to the wrong party, or make a payment for a wrong amount, KHAALIJEB shall have no responsibility or liability to refund the transaction in any circumstances. The only way You can get back Your money is by contacting the party to whom You erroneously made the payment and asking them for the amount.
+                    </p>
+
+                    <p class="text-justify">
+                      In case there has been an unauthorized access to Your account, Your KHAALIJEB’s account’s password, transaction OTP or bank account MPIN has been compromised or Your mobile device is misplaced, lost or stolen, You shall inform Us at the earliest to prevent any unauthorized access or use of Your KHAALIJEB account and Your mobile device. Any unauthorized use due to the abovementioned circumstances shall be the sole responsibility of the User.
+                    </p>
+
+                    <p>In the event of any dispute, KHAALIJEB logs and records shall be final and binding as the conclusive evidence of the transactions on Our Services.</p>
+
+                    <h5>THIRD-PARTY LINKS</h5>
+
+                    <p class="text-justify">Certain content, products or services available via Our Platforms may include materials from third- parties. Third-party links on Our Platform may direct You to third-party platforms that are not affiliated with Us. We are not responsible for examining or evaluating the content or accuracy and We do not warrant and will not have any liability or responsibility for any third-party materials, or for any other materials, products, or services of third-parties. We are not liable for any harm or damages related to the purchase, access or use of goods, services, resources, content, or any other transactions made in connection with any third-party platforms.
+                    </p>
+
+                    <p class="text-justify">
+                      Please read carefully the third-party's policies and practices and make sure You understand them before You engage with them in any transaction. Complaints, claims, concerns, or questions regarding third- party products or services should be directed to the third-party platform.
+                    </p>
+
+                    <h5>ADVERTISEMENT</h5>
+
+                    <p class="text-justify">Some of Our Services may be supported by advertising revenue and may display advertisements and promotions. These advertisements may be targeted to the content of information stored on the Services, queries made through the Services or other information. The manner, mode and extent of advertising by KHAALIJEB on the Services are subject to change without specific notice to You. In consideration for KHAALIJEB granting You access to and use of the Services, You agree that KHAALIJEB may place such advertising on the Services. 
+                    </p>
+
+                    <h5>DISCLAIMER OF WARRANTIES</h5>
+
+                    <p class="text-justify">We do not guarantee, represent or warrant that Your use or access of Our Services will be uninterrupted, timely, secure or error-free. We do not warrant that the results that may be obtained from the use of Our Service will be accurate or reliable. You agree that from time to time We may remove the Service for indefinite periods of time or cancel the service at any time, without notice to You. You expressly agree that Your use of, or inability to use, the Service is at Your sole risk. The Services provided to You on 'as is' basis, without any representation, warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement.
+                    </p>
+
+                    <h5>LIMITATION OF LIABILITY</h5>
+
+                    <p class="text-justify">In no case shall We, Our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from Your use of Our Services, or for any other claim related in any way to Your use of Our Service including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of Our Service.
+                    </p>
+
+                    <h5>PROHIBITED USE</h5>
+
+                    <p class="text-justify">In addition to other prohibitions as set forth in this Agreement, You are prohibited from using or accessing Our Services or Platforms: (a) for any purpose that is illegal, offensive or prohibited as per the applicable Government, State, Federal, local or Cyber laws and regulations; (b) to infringe upon or violate Our intellectual property rights or the intellectual property rights of others; (c) to submit false or misleading information; (d) for money laundering, tax evasion or any other illegal activities; (e) to impersonate anyone, falsely claim or access the accounts of others without permission, forge another person’s digital signatures.
+                    </p>
+
+                    <h5>PROPRIETARY RIGHTS</h5>
+
+                    <p class="text-justify">All materials on Our Platforms, including, without limitation, names, logos, trademarks, images, text, columns, graphics, videos, photographs, illustrations, artwork, software and other elements are protected by copyrights, trademarks or other intellectual property rights owned and controlled by KHAALIJEB. You acknowledge and agree that all materials on Our Platforms is made available for limited, non-commercial, personal use only. No material may be copied, reproduced, republished, sold, downloaded, posted, transmitted, or distributed in any way, or otherwise used for any purpose, by any person or entity, without express written permission of KHAALIJEB. You may not add, delete, distort, or otherwise modify the materials on Our Platforms. Any unauthorized attempt to modify any material, to defeat or circumvent any security features, or to utilize the App or any part of the material for any purpose other than its intended purposes is strictly prohibited.
+                    </p>
+
+                    <p>Our Platforms shall not be used in connection with any commercial purposes, except as specifically approved by KHAALIJEB.</p>
+
+                    <h5>TERMINATION AND EFFECTS</h5>
+
+                    <p class="text-justify">You can terminate Your account at any time by sending an email to Our Legal Compliance officer or such other electronic address of KHAALIJEB, and ceasing further access or use of Our Services.
+                    </p>
+
+                    <p class="text-justify">
+                      We may terminate Your use of Our Services and deny You access to the Services in Our sole discretion for any reason or no reason, including Your: (i) violation of any provision of this Agreement; or (ii) lack of use of the Services. You agree that any termination of Your access to the Services may be effected without prior notice, and acknowledge and agree that We may immediately deactivate or delete Your account and all related information and bar any further access to Your account and Our Services.
+                    </p>
+
+                    <h5>CONSENT TO USE YOUR INFORMATION</h5>
+
+                    <p class="text-justify">Please read Our <a href="" style="text-decoration: underline; color: black;">Privacy Policy</a> to understand the types of information that We may collect from You when You access or use Our Services and practices for collecting, using, maintaining, protecting and disclosing that information.
+                    </p>
+
+                    <h5>FORCE MAJEURE</h5>
+
+                    <p class="text-justify">Neither party shall be liable to the other for any failure to perform any obligation under any Agreement which is due to an event 
+                      beyond the control of such party including but not limited to any act of god, terrorism, war, political insurgence, insurrection, riot, civil unrest, act of civil or military authority, uprising, earthquake, flood or any other natural or man-made eventuality outside of Our control, which causes the termination of an agreement or contract entered into, nor which could have been reasonably foreseen. Any party affected by such event shall forthwith inform the other party of the same and shall use all reasonable endeavors to comply with the terms and conditions of any Agreement contained herein.
+                    </p>
+
+                    <h5>AMENDMENTS AND CHANGES</h5>
+
+                    <p class="text-justify">We reserve the right to change, modify, add or remove portions of this Agreement, at any time without any prior written notice to You. It’s Your responsibility to review this Agreement periodically for updates or changes. Once posted, those changes are effective immediately, unless stated otherwise. Continued access or use of Our Platforms constitutes Your acceptance of the changes and the amended Agreement. However, if You do not agree with the changes, please do not continue to use or access Our Services.
+                    </p>
+
+                    <h5>INDEMNIFICATION</h5>
+
+                    <p class="text-justify">
+                      You agree to indemnify, defend and hold harmless Us and Our parent, subsidiaries, affiliates, partners, officers, directors, agents, contractors, licensors, service providers, subcontractors, suppliers, interns and employees, harmless from any claim or demand, including reasonable attorneys’ fees, made by any third-party due to or arising out of Your breach of the terms and conditions set forth herein or the documents they incorporate by reference, or Your violation of any law or the rights of a third-party.
+                    </p>
+
+                    <h5>SEVERABILITY</h5>
+
+                    <p class="text-justify">If any provision of this Agreement is determined to be invalid or unenforceable, it will be deemed to be modified to the minimum extent necessary to be valid and enforceable. If it cannot be so modified, it will be deleted. The modification or deletion shall not affect the validity or enforceability of any other provision.
+                    </p>
+
+                    <h5>DISPUTE RESOLUTION AND GOVERNING LAW JURISDICTION</h5>
+
+                    <p class="text-justify">In case of any dispute or difference between the parties relating to interpretation of any clauses and claims whatsoever arising out of or in any manner related to any provision of this Agreement including any failure of the respective representatives of the parties to reach an amicable understanding under any provision of this Agreement shall be resolved by a Sole Arbitrator appointed by the Parties.
+                    </p>
+
+                    <p class="text-justify">
+                      The Sole Arbitrator shall adopt all the procedures, rules and regulations mentioned in the Arbitration &amp; Conciliation Act, 1996 and the accompanying rules. The costs of the Arbitration shall be borne equally by the parties.
+                    </p>
+
+                    <p>The arbitration proceedings shall be in English. The venue of the arbitration proceedings shall exclusively be at Bangalore, Karnataka.</p>
+
+                    <p class="text-justify">This Agreement shall be interpreted, construed and enforced in all respects in accordance with the laws of India without regard to any principles of conflicts of laws thereof and shall be subject matter of Courts of Bangalore, Karnataka.
+                    </p>
+
+                    <h5>CONTACTING US</h5>
+
+                    <p>For any query, grievance, complaint, suggestions or any other information, You may contact Our legal Compliance Officer at 
+                      <a href="mailto:legal@khaalijeb.com" style="text-decoration: underline; color: black;">legal@khaalijeb.com</a>.
+                    </p>
+    </div>
+    <div id="privacy" class="tab-pane">
+      <h4>Privacy Policy</h4>
+
+                    <h6 style="margin-bottom: 24px; margin-top: 28px;"> <strong>Last Updated on 24th August, 2017.</strong></h6>
+
+                    <p class ="text-justify">THIS DOCUMENT (hereinafter referred to as the <strong>“Privacy Policy”</strong>) IS AN ELECTRONIC CONTRACT AS PER THE INFORMATION TECHNOLOGY ACT, 2000 AND THE RULES MADE THEREUNDER AND THE AMENDED PROVISIONS PERTAINING TO ELECTRONIC RECORDS IN VARIOUS STATUTES AS AMENDED BY THE INFORMATION TECHNOLOGY ACT, 2000. THIS PRIVACY POLICY DOES NOT REQUIRE ANY PHYSICAL, ELECTRONIC OR DIGITAL SIGNATURE.
+                    </p>
+
+                    <p class="text-justify">Inkdrops Labs Private Limited <strong>("KHAALIJEB", "We", "Us", and "Our")</strong> value Your trust and respect Your privacy and are committed to protecting it through Our compliance with this Privacy Policy. 
+                    </p>
+
+                    <p class="text-justify">For the purpose of this Privacy Policy, wherever the context so requires <strong>"You"</strong> or <strong>"User" or “Your”</strong>shall mean merchants or sellers or billers, customers or buyers or consumers, or any other persons who access or use Our Websites, applications and other services (collectively, Our <strong>"Services" or “Platforms”</strong>).
+                    </p>
+
+                    <p class="text-justify">This Privacy Policy will help You understand the types of information that We may collect from You, when You access or use Our Services and practices for collecting, using, maintaining, protecting and disclosing that information.</p>
+
+                    <p class="text-justify">By accessing or using Our Services, You agree to this Privacy policy and expressly give Us the consent to use and disclose Your information in accordance with this Privacy Policy. If You do not agree to the terms of this policy, please do not use or access Our Services. This Privacy policy may change at any time without prior notification. To make sure that You are aware of any changes, kindly review the policy periodically.
+                    </p>
+
+                    <h5>INFORMATION COLLECTION</h5>
+
+                    <p class="text-justify">KHAALIJEB collects such Information of Yours which is necessary to operate Our business and improve Our Services. We may obtain the following information about You and the devices from which You use or access Our Services.
+                    </p>
+
+                    <p class="text-justify">
+                      <strong>Profiling Information: </strong>For providing Services, We require certain information for registration such as Your name, mobile number, profile picture, email id; and certain information about Your personal identity such as gender, date of birth, etc. Further, We also collect and store Your usernames, passwords, and other security-related information that You enter for using Our Services.
+                    </p>
+
+                    <p class="text-justify">
+                      <strong>Transactional Information: </strong> For enabling You to make payments, We may, upon Your consent, store Your financial information such as Your bank account or details mentioned on Your credit cards or debit cards, or other payment instrument details etc. that are required for a successful transaction. We also store transaction details such as amount spent, merchant name, transaction ID, date and time of transaction.
+                    </p>
+
+                    <p class="text-justify">
+                      <strong>Navigational and Device Information: </strong> We collect information about Your navigation using Our Services, for example the URLs of Websites from which You reach Our Platforms and from which You request downloads, Websites or pages of merchants You visit using Our Services. We may also collect information such as Your domain name, Web request, IP address, device ID, mobile application version, type of operating system that Your computer or mobile uses, browser type, browser language, the referring site etc.
+                    </p>
+
+                    <p class="text-justify">
+                      <strong>Cookies: </strong> A cookie is an insignificant portion of data that is sent to the Web browser of Your device from which Our Platform is accessed. If Your Web browser settings permit, cookies can be sent to Your Web browser for recording information about Your online preferences and allowing Us to cater to Your interests in a better manner. You can set Your browser to notify You when a cookie is sent to You, giving You the chance to decide whether or not to accept it. If You do accept a cookie, You thereby agree to Our use of information collected by Us using that cookie.
+                    </p>
+
+                    <p class="text-justify">
+                      <strong>Your activities on Our Platforms: </strong> Information about Your activity while accessing or using Our Services such as Your search queries, search results selected, number of clicks, pages viewed and the order of those pages, how long You used Our Services, the date and time You used the Services, the products You buy, data on number of offers saved, payment attempts, error logs, and other similar information.
+                    </p>
+
+                    <p class="text-justify">
+                      <strong>Precise Location Information: </strong> When You use Our location-enabled Services, We may collect and process information about Your mobile device’s GPS location (including the latitude, longitude or altitude of Your mobile device) and the time at which the location information is recorded to customize the Services with location-based information and features. If You wish to use such Services, You will be asked to consent to Your data being used for this purpose. You can withdraw Your consent at any time by disabling the GPS or other location-tracking functions on Your device, provided Your device allows You to do this.
+                    </p>
+
+                    <p class="text-justify">
+                      <strong>Third Parties Information: </strong> In order to protect You from fraud or other misconduct, We may obtain information about You from third parties to verify the information You provide. For example, We may use card authorization and fraud screening service to verify that Your credit or debit card information matches the information that You provided to us. We may collect, process and store Your user ID associated with any social media account (such as Your Facebook account) that You use to sign into Our Services or connect with or use with Our Services.
+                    </p>
+
+                    <p class="text-justify">
+                      <strong>Correspondence Information: </strong> When You send an email or any other communication to us, We may retain those communications in order to process Your enquiries, respond to Your requests and improve Our Services.
+
+                      <h5>WHAT DO WE DO WITH YOUR INFORMATION</h5>
+
+                      <p class="text-justify"> We use Your information to identify You, to provide You with services &amp; products You explicitly requested for, to resolve disputes, troubleshoot concerns, help promote safe services, collect money, measure consumer interest in Our Services, inform You about offers, products, services, updates, customize Your experience, detect &amp; protect Us against error, fraud and other criminal activities, enforce Our terms and conditions, etc.
+                      </p>
+
+                      <p class="text-justify">We collect and store Your Service usage and transactional information in order to enable You to view certain details of all Your transactions which have been made using Our Platforms, to provide You uninterrupted and satisfactory Services, to comply with any statutory or regulatory requirement, to monitor Your use of Our Services for the purposes of ensuring compliance with Our User rules and to serve other such purposes.
+                      </p>
+
+                      <p class="text-justify">We collect and use some of Your information in an aggregated form to compile statistical and demographical profiles for Our business and marketing activities, to improve Our Services, and to customize Our Services for You. We may disclose such information about You, provided that the information is in an aggregated form that is not capable of being used or interpreted in such a manner as to identify You.
+                      </p> 
+
+                      <p class="text-justify">We identify and use Your IP address to help diagnose problems with Our server, and to administer Our Services. Your IP address is also used to help identify You and to gather broad demographic information.
+                      </p>
+
+                      <p class="text-justify">We collect Your correspondence information to process your enquiries, communicate with you, respond to your requests, ask you to complete survey and connect with for other such purposes that can help us improve our Services and serve you better.
+                      </p>
+
+                      <h5>DISCLOSURE OF PERSONAL INFORMATION</h5>
+
+                      <p class="text-justify">We do not disclose or share Your personal information with any third party until essential for providing You Services; or for the below purposes in accordance with this Privacy Policy.
+                      </p>
+
+                      <p class="text-justify">Information security is critical to Us and We will not share Your personal information with any other third parties except, and only to the extent necessary, with parties such as Our merchants, acquiring banks, credit or debit card processors, etc. for Us to deliver payment services to You.
+                      </p>
+
+                      <p class="text-justify">We do not disclose or distribute any of Your Personal information to a third party or use such Personal information for commercial or marketing purposes unless We receive the express consent of the User. However, KHAALIJEB may, itself or through third parties, send You e-mails, SMS, or other such means to communicate, send reminders for payment, advertise Our Services, promote new Services and activities or for Your invaluable feedback.
+                      </p>
+
+                      <p class="text-justify">We may share personal information with other corporate entities and affiliates to help Us detect and prevent identity theft, fraud and other potentially illegal acts; correlate related or multiple accounts to prevent abuse of Our Platforms; and to facilitate joint or co-branded services where such services are provided by more than one corporate entity. Those entities and affiliates may not market to You as a result of such sharing unless You explicitly opt-in.
+                      </p>
+
+                      <p class="text-justify">You acknowledge and agree that in the interests of improving personalization and Service efficiency, We may, under controlled and secure circumstances, share Your personal information with Our affiliates or associates. If required, KHAALIJEB will disclose it in a non-aggregated form which is not capable of being used or interpreted in such a manner as to identify You.
+                      </p>
+
+                      <p class="text-justify">If all or some of the business, stocks or assets of KHAALIJEB are acquired or merged with another business entity, We will share all or some of Your information with this entity to continue to provide the Services to You. You will receive the notice of such an event and the new entity will inform You of any changes to the practices in this Privacy Policy. If the new entity wishes to make additional use of Your information, You may decline such use at such time.
+                      </p>
+
+                      <p class="text-justify">We may disclose Your personal information if required to do so by law or in the good faith or belief that such disclosure is reasonably necessary to respond to subpoenas, court orders, or other legal process. We may disclose Your personal information to law enforcement offices, third party rights owners, or others in the good faith belief that such disclosure is reasonably necessary to enforce Our Privacy Policy; respond to claims that an advertisement, posting or other content violates the rights of a third party; or protect the rights, property or personal safety of Our Users or the general public.
+                      </p>
+
+                      <h5>LINKS TO OTHER PLATFORMS</h5>
+
+                      <p class="text-justify">Our Platforms link to other third party platforms that may collect some information about You. KHAALIJEB is not responsible for the privacy practices or the content of those linked platforms.
+                      </p>
+
+                      <h5>SECURITY &amp; RETENTION</h5>
+
+                      <p class="text-justify"> KHAALIJEB has implemented stringent security measures to protect the loss, misuse, and alteration of the information under Our control. Whenever You change or access Your account information, We offer the use of a secure server. Once Your information is in Our possession, We adhere to strict security guidelines, protecting it against any unauthorized access.
+                      </p>
+
+                      <p class="text-justify">The security of Your Information also depends on Your efforts to keep Your account credentials confidential. You should not share Your account password, pin, mpin or any such information with anyone. It is Your responsibility to control access to Your mobile device and KHAALIJEB accounts. It is Your responsibility to alert Us if You believe that the security of Your information has been breached or compromised.
+                      </p>
+
+                      <p class="text-justify">Notwithstanding anything contained in this Policy or elsewhere, KHAALIJEB shall not be held responsible for any loss, damage or misuse of Your Information, if such loss, damage or misuse is attributable to a Force Majeure Event (as defined below).
+                      </p>
+
+                      <p class="text-justify"> A <strong>Force Majeure Event</strong> shall mean any event that is beyond the reasonable control of KHAALIJEB and shall include, without limitation, sabotage, fire, flood, explosion, acts of God, civil commotion, strikes or industrial action of any kind, riots, insurrection, war, acts of government, computer hacking, unauthorized access to computer, computer system or computer network,, computer crashes, breach of security and encryption (provided beyond reasonable control of KHAALIJEB), power or electricity failure or unavailability of adequate power or electricity.
+                      </p>
+
+                      <p class="text-justify"> While We will endeavor to take all reasonable and appropriate steps to keep secure any personal information which We hold about You and prevent unauthorized access, You acknowledge that the internet or computer networks are not fully secure and that We cannot provide any absolute assurance regarding the security of Your Personal information.
+                      </p>
+
+                      <p class="text-justify"> You agree that all Personal information shall be retained till such time required for the Purpose or required under applicable law, whichever is later.
+                      </p>
+
+                      <h5>UPDATING ACCOUNT INFORMATION</h5>
+
+                      <p class="text-justify">You can add or update Your account Information on regular basis. Kindly note that KHAALIJEB would retain Your previous personal information in its records.
+                      </p>
+
+                      <h5>CHANGES TO THIS POLICY</h5>
+
+                      <p class="text-justify"> We reserve the right to change, modify, add or remove portions of the Privacy Policy, at any time without any prior written notice to You. It is Your responsibility to review the Privacy Policy periodically for updates or changes. Once posted, those changes are effective immediately, unless stated otherwise. Continued access or use of Our Platforms constitutes Your acceptance of the changes and the amended Privacy Policy. However, if You do not agree with the changes, please do not continue to use or access Our Services.
+                      </p>
+
+                      <h5>YOUR CONSENT AND OPTING OUT</h5>
+
+                      <p class="text-justify">
+                        You agree and acknowledge that You are providing Your Information out of Your free will. You have an option not to provide or permit KHAALIJEB to collect Your information or later on withdraw Your consent with respect to the information provided herein by sending an email to Our Legal Compliance officer or such other electronic address of KHAALIJEB. In such case, You should neither access or use Our Service nor shall contact us. 
+                      </p>
+
+                      <p class="text-justify">
+                        These terms and conditions shall be governed by and construed in accordance with the Indian laws. Any dispute arising under these terms and conditions shall be subject to the jurisdiction of the courts of India.
+                      </p>
+
+                      <h5>CONTACTING US</h5>
+
+                      <p class="text-justify">
+                        For any query, grievance, complaint or any other information, You may contact Our legal Compliance Officer at 
+                        <a href="mailto:legal@khaalijeb.com" style="text-decoration: underline; color: black;">legal@khaalijeb.com</a>.   
+                      </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+

@@ -1,0 +1,429 @@
+<!-- =========================
+ START ABOUT US SECTION
+ ============================== -->
+<div class="header-wrap hideheader" id="headerWrap" ng-controller="hideHeaderCtrl">
+<nav class="navbar navbar-default legalnavbartop mainmenu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button id="burgbtn"
+             type="button" 
+             class="navbar-toggle legaltogglebutton" 
+             data-toggle="collapse" 
+             data-target=".navbar-collapse" 
+              ng-click='burgebtn()'
+              ng-show='burgbtn'>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+      </button>
+      <button id="crsbtn" 
+              type="button" 
+              class="navbar-toggle legaltogglebutton" 
+              data-toggle="collapse" 
+              data-target=".navbar-collapse"
+              ng-click='crosbtn()' 
+              ng-show="crsbtn" >
+                                          <!-- <i class="fa fa-times" 
+                                             aria-hidden="true" 
+                                             style="font-size: 24px; font-weight: 300; color: #777;">
+                                               
+                                          </i> -->
+                                          <img src="images/homesvgn/Cancel.svg" style="height: 20px;margin-top: 4px;">
+      </button>
+      <div class="legal-img-logo">
+        <a ng-click="button_click('/home')"><img class="logo_all" style="width:60px; height:60px; cursor: pointer;" target="_self"></a>
+      </div>
+    </div>
+
+    <div class="box effect1" ng-if="clpsef">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <li><a ng-href="/home" ng-click="button_click('/home')"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li>
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-click="button_click('/home')" type="button">HOME</a></li>
+        <li><a ng-click="button_click('/about')">ABOUT</a></li>
+        <li><a ng-click="button_click('/upi')">UPI</a></li>
+        <li><a ng-click="button_click('/student')" style="color: #ef5350 !important;">STUDENT</a></li>
+        <li><a ng-click="button_click('/business')">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked()" target="_blank">BLOG</a></li>
+        <li><a ng-click="button_click('/contact')">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="boxmain">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <!-- <li><a ng-href="/home" ng-click="button_click('/home')" target="_self"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li> -->
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-href="/home" ng-click="button_click('/home')" type="button" target="_self">HOME</a></li>
+        <li><a ng-href="/about" ng-click="button_click('/about')" target="_self">ABOUT</a></li>
+        <li><a ng-href="/upi" ng-click="button_click('/upi')" target="_self">UPI</a></li>
+        <li><a ng-href="/student" ng-click="button_click('/student')" style="color: #ef5350 !important;" target="_self">STUDENT</a></li>
+        <li><a ng-href="/business" ng-click="button_click('/business')" target="_self">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked2()" class="blogcls" onmouseover="chred(this)" onmouseout="chblack(this)" target="_blank">BLOG</a></li>
+        <li><a ng-href="/contact" ng-click="button_click('/contact')" target="_self">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</nav>
+</div>
+
+
+<div id="wrapper" class="cmn2all">
+  <div class="hero">
+    <div class="s_hero">
+      <p><strong>A bit more of everything</strong></p>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="container-fluid">
+  <img src="/images/studentsvgn/Header Image - Student.png" class="img-responsive">
+</div> -->
+
+
+
+<div class="container">
+  <div class="row cau cau1">
+   <h3>UNBELIEVABLE BENEFITS FOR AWESOME STUDENTS</h3>
+ </div>
+</div>
+
+
+
+
+<div class="container stm10">
+  <div class="item item1">
+    <div>
+      <img src="/images/studentsvgn/Ballon.svg">
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <img src="/images/studentsvgn/Dinner.svg">
+    </div>
+  </div>
+</div>
+
+<div class="container stm16">
+  <div class="item item1">
+    <h4>Being a student was never so much fun!</h4>
+  </div>
+  <div class="item item2">
+    
+  </div>
+</div>
+
+<div class="container stm11">
+  <div class="item item1">
+    <div>
+      <p>Students need discounts more than anyone, but there’s never been an acclaimed Student Loyalty Program.</p>
+    </div>
+    <div class="mtl">
+      <p><strong>We want to be the first one.</strong></p>
+    </div>
+    <div class="mtl">
+      <p>Our student benefit program is intelligently designed. It’s easy to get started. Exploring the benefits & redeeming them are simple & fast. Most importantly, it’s incredibly useful for the student community.</p>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <h4>Save money on everything you do</h4>
+      <p>Planning to throw a birthday party, shop jeans online or instore, buy an electronic gadget, visit a salon, or a trip to Goa, we’ll help you save a lot of money.</p>
+    </div>
+    <div class="mtr">
+      <h4>We have covered everyone</h4>
+      <p>From nearby restaurants & salons to the most loved brands. E-commerce to delicious food ordering platforms, we’re making everyone student friendly.</p>
+    </div>
+  </div>
+</div>
+
+
+<div class="container stm12">
+  <div class="item item1">
+    <div>
+      <img src="/images/studentsvgn/Shopping.svg">
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <img src="/images/studentsvgn/Travel.svg">
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row cau alft">
+   <h3>JOIN THE COOLEST STUDENT BENEFIT PROGRAM</h3>
+ </div>
+</div>
+
+
+
+<div class="container stm13">
+  <div class="item item1">
+    <div>
+      <h3>Search, Grab & Redeem</h3>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td><img src="/images/studentsvgn/Search Deal.svg"></td>
+          <td>
+            <h4>Easy to find a deal</h4>
+            <p>Browse latest discounts brand-wise or find the brand you want offers from.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><img src="/images/studentsvgn/Grab Deal.svg"></td>
+          <td>
+            <h4>Grab the deal</h4>
+            <p>Claim the best deals you like and get access to the coupon codes.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><img src="/images/studentsvgn/Online Deal.svg"></td>
+          <td>
+            <h4>Redeem online or offline</h4>
+            <p>Follow the steps to redeem and avail the benefits at the merchant's place.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <h3>Verify Your Student Status</h3>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td><img src="/images/studentsvgn/ID Card.svg"></td>
+          <td>
+            <h4>Institute’s ID card</h4>
+            <p>Upload the image of your ID card. We’ll verify & activate your membership.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><img src="/images/studentsvgn/Email.svg"></td>
+          <td>
+            <h4>Institute email ID</h4>
+            <p>Use .ac.in or .edu.in email given by the institute. It'll be verified instantly.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><img src="/images/studentsvgn/Write.svg"></td>
+          <td>
+            <h4>Write to us</h4>
+            <p>In case you have neither of the above, write to us at student@khaalijeb.com.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<div class="container">
+  <div class="row cau">
+   <h3>BECOME A CAMPUS AMBASSADOR</h3>
+ </div>
+</div>
+
+
+
+<div class="container stm14">
+  <div class="item item1">
+    <div>
+      <h3>All you need to do</h3>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td><span>1</span></td>
+          <td>
+            <p>Promote our offerings amongst the students in your college.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>2</span></td>
+          <td>
+            <p>Conduct our marketing
+              campaigns in your college.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>3</span></td>
+          <td>
+            <p>Get students onboard for the student
+              loyalty program.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <img src="images/studentsvgn/Girl_108x368.svg">
+    </div>
+  </div>
+  <div class="item item3">
+    <div>
+      <h3>Great perks for you</h3>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td><span>1</span></td>
+          <td>
+            <p>Gain invaluable experience working
+              with an early stage startup. </p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>2</span></td>
+          <td>
+            <p>Awesome perks, incentives, & a work
+              experience certificate.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>3</span></td>
+          <td>
+            <p>Help your college mates save a lot of
+              money.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container stm15">
+              <div class="row cau tm3 pt">
+                 <p>Enter your E-Mail ID or Phone Number and we’ll get in touch with you!</p>
+              </div>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="row-md-12 mainpagejnallotextbox">
+               <div>
+           <form name="sfrm01" ng-model="sfrm01" ng-submit="ssubmit(frm01.$valid)" ng-controller="myCtrl">
+            <input type="text"
+                   name="semailNum" 
+                   class="mptbjebnoallocation" 
+                   placeholder="Email or Phone Number" 
+                   ng-model="semailNum"
+                   ng-model-options="{ updateOn: 'blur'}"
+                   ng-focus="sfrm01.semailNum.$setUntouched()" 
+                   ng-pattern="studentRegex"
+                   id="semailNum" 
+                   onclick="stxtclick()"
+                   required>
+
+              <!-- <span ng-show="frm01.hname.$touched && frm01.hname.$error.required">Required</span> -->    
+            <button class="mpjbbuttonjnallo" type="button" ng-click="ssubmit(frm01.$valid)">SUBMIT</button>
+            <p id="sss1" style="font-size: 15px; font-weight: 400; ">
+
+            </p>
+          </form>
+         </div>
+              </div>       
+            </div> 
+          </div>
+          
+
+<section class="copyright">
+    <div class="container mtl">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="footermainicon">
+                    <span class="textconnectfooter">Stay in Touch</span>
+                    <div class="social_icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/KhaaliJeb" target="_blank" class="facebookicon"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/KhaaliJeb" target="_blank" class="twittericon"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/u/0/112181609625900290821" target="_blank" class="plusicon"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 r">
+                <!-- <div class="messagenintyone">
+                    <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a>
+                </div> -->
+                <div class="abt_im">
+                  <h3>DOWNLOAD NOW</h3>
+                  <div class="_im">
+                  <a href="#" type="button"><img class="im1" src="/images/svgs1/Google Play.svg" /></a>
+                  <a href="#" type="button"><img class="im2" src="/images/svgs1/App Store.svg" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer-container-legal">
+        <hr class="hrfooter">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footerMargin">
+            <div class="col-md-6">
+                <a ng-click="button_click('/about')" class="footeranchortag">About</a>
+                <a ng-click="button_click('/contact')" class="footeranchortag">Contact</a>
+                <a href="#" class="footeranchortag">Sitemap</a>
+            </div>
+            <div class="col-md-6">
+             <div class="footercompanyname">
+                <a ng-click="button_click('/legal')" class="footeranchortag">Legal</a>
+                <a href="" class="footeranchortag" style=" pointer-events: none; cursor: default;">INKDROPS LABS PVT LTD &copy; 2018</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+

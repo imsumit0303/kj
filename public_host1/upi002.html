@@ -1,0 +1,697 @@
+<!-- =========================
+ START ABOUT US SECTION
+ ============================== -->
+<div class="header-wrap hideheader" id="headerWrap" ng-controller="hideHeaderCtrl">
+<nav class="navbar navbar-default legalnavbartop mainmenu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button id="burgbtn"
+             type="button" 
+             class="navbar-toggle legaltogglebutton" 
+             data-toggle="collapse" 
+             data-target=".navbar-collapse" 
+              ng-click='burgebtn()'
+              ng-show='burgbtn'>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+      </button>
+      <button id="crsbtn" 
+              type="button" 
+              class="navbar-toggle legaltogglebutton" 
+              data-toggle="collapse" 
+              data-target=".navbar-collapse"
+              ng-click='crosbtn()' 
+              ng-show="crsbtn" >
+                                          <!-- <i class="fa fa-times" 
+                                             aria-hidden="true" 
+                                             style="font-size: 24px; font-weight: 300; color: #777;">
+                                               
+                                          </i> -->
+                                          <img src="images/homesvgn/Cancel.svg" style="height: 20px;margin-top: 4px;">
+      </button>
+      <div class="legal-img-logo">
+        <a ng-click="button_click('/home')"><img class="logo_all" style="width:60px; height:60px; cursor: pointer;" target="_self"></a>
+      </div>
+    </div>
+
+    <div class="box effect1" ng-if="clpsef">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <li><a ng-href="/home" ng-click="button_click('/home')"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li>
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-click="button_click('/home')" type="button">HOME</a></li>
+        <li><a ng-click="button_click('/about')">ABOUT</a></li>
+        <li><a ng-click="button_click('/upi')"  style="color: #ef5350 !important;">UPI</a></li>
+        <li><a ng-click="button_click('/student')">STUDENT</a></li>
+        <li><a ng-click="button_click('/business')">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked()" target="_blank">BLOG</a></li>
+        <li><a ng-click="button_click('/contact')">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="boxmain">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <!-- <li><a ng-href="/home" ng-click="button_click('/home')" target="_self"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li> -->
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-href="/home" ng-click="button_click('/home')" type="button" target="_self">HOME</a></li>
+        <li><a ng-href="/about" ng-click="button_click('/about')" target="_self">ABOUT</a></li>
+        <li><a ng-href="/upi" ng-click="button_click('/upi')" style="color: #ef5350 !important;" target="_self">UPI</a></li>
+        <li><a ng-href="/student" ng-click="button_click('/student')" target="_self">STUDENT</a></li>
+        <li><a ng-href="/business" ng-click="button_click('/business')" target="_self">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked2()" class="blogcls" onmouseover="chred(this)" onmouseout="chblack(this)" target="_blank">BLOG</a></li>
+        <li><a ng-href="/contact" ng-click="button_click('/contact')" target="_self">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</nav>
+</div>
+
+
+
+
+
+
+<div class="cover cmn2all"> 
+<div class="container upm10" id="fluctid" onscroll="fluct()"> 
+  <div class="item item1">
+    <div>
+      <h3 class="mboff">THE SIMPLEST WAY TO PAY</h3>
+      <p>Pay friends & merchants directly from your bank account, instantly, without entering any complicated account information.</p>
+      <p class="mt">UPI is developed by RBI, NPCI & the banks.</p>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <h3 class="mbon">THE SIMPLEST WAY TO PAY</h3>
+      <!-- <img src="images/upisvg/UPI Info Fig.svg"> -->
+      <img class="upi_machine">
+    </div>
+  </div>
+</div>
+</div>
+<hr>
+
+
+<div class="container">
+  <div class="row cau">
+     <h3>BEST THINGS ABOUT UPI</h3>
+  </div>
+</div>
+
+
+<div class="container upm11">
+  <div class="item item1">
+    <div>
+      <h4>Sending & Requesting Money</h4>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td><span>1</span></td>
+          <td>
+            <p>Send money to a Khaalijeb user or any other
+                      UPI app user using his UPI ID.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>2</span></td>
+          <td>
+            <p>If anyone doesn’t use a UPI app, send money
+                      using his account no. & IFSC.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>3</span></td>
+          <td>
+            <p>With UPI, no need to share account no. & IFSC. All
+                      you need is a UPI ID.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>4</span></td>
+          <td>
+            <p>All payments come, instantly & directly,
+                      in the receiver’s bank account.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <h4>Simplest Merchant Payments</h4>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td><span>1</span></td>
+          <td>
+            <p>Pay not only at Khaalijeb’s merchants but also
+                      at other merchants accepting UPI.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>2</span></td>
+          <td>
+            <p>No need to enter complicated card information
+                      & then wait for the OTP.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>3</span></td>
+          <td>
+            <p>Pay merchants by approving the payment
+                      request received with your UPI PIN.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mt">
+        <tr>
+          <td><span>4</span></td>
+          <td>
+            <p>Scan merchant’s UPI QR code & then enter
+                      your UPI PIN to make a payment.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="container">
+  <div class="row cau">
+     <h3>UPI ID IS ALL YOU NEED</h3>
+  </div>
+</div>
+
+
+<div class="container upm12">
+  <div class="item item1">
+    <div>
+      <img src="images/upisvg/IFSC 2.svg">
+      <h4>KEEP A/C NO. & IFSC IN CLOSET</h4>
+      <p>No hassle of sharing & adding cumbersome account numbers & IFSC code. Just UPI ID is needed.</p>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <img src="images/upisvg/Card 2.svg">
+      <h4>DITCH YOUR CARD</h4>
+      <p>No hassle of remembering & entering complicated card information to make payments. UPI ID does the job.</p>
+    </div>
+  </div>
+  <div class="item item3">
+    <div>
+      <img src="images/upisvg/VPA Coins.svg">
+      <h4>USE UPI ID FOR PAYMENTS</h4>
+      <p>Use UPI ID for making & receiving payments. UPI ID masks the sensitive account information.</p>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<div class="container">
+  <div class="row cau">
+     <h3>SIMPLE UPI PIN</h3>
+  </div>
+</div>
+
+
+
+<div class="container upm13">
+  <div class="item item1">
+    <div>
+      <table>
+        <tr>
+          <td><img src="images/upisvg/OTP Phone.svg" style="height: 90px;"></td>
+          <td>
+            <h4>FREEDOM FROM OTP</h4>
+            <p>No need to wait for the OTP & look for it in the SMS to authenticate & complete a transaction.</p>
+          </td>
+        </tr>
+      </table>
+      <table class="mtl">
+        <tr>
+          <td><img src="images/upisvg/Password 2.svg" style="height: 90px;"></td>
+          <td>
+            <h4>USE SECURE UPI PIN</h4>
+            <p>Just remember a simple UPI PIN and enter it to authenticate & complete a transaction.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <table>
+        <tr>
+          <td><span>1</span></td>
+          <td><p>Just like your ATM pin, UPI PIN is used to make payments. It consists of 4 or 6 digits.</p></td>
+        </tr>
+      </table>
+      <table class="mtr">
+        <tr>
+          <td><span>2</span></td>
+          <td><p>Every bank account has its own UPI PIN. It is provided by your bank when you register for Mobile Banking.</p></td>
+        </tr>
+      </table>
+      <table class="mtr">
+        <tr>
+          <td><span>3</span></td>
+          <td><p>You can change or set your UPI PIN using Khaalijeb by entering your debit card details.</p></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<div class="container">
+  <div class="row cau">
+     <h3>HOW IT WORKS?</h3>
+  </div>
+</div>
+
+
+
+<div class="container upm14">
+  <div class="item item1">
+    <div>
+      <table>
+        <tr class="bc">
+          <td><h4>PAY MERCHANT</h4></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Enter the merchant’s UPI ID or scan the UPI QR code.</p>
+              <p> Enter the amount you have to pay.</p>
+               <p>Select the account from which you want to pay.</p>
+                <p>Enter your UPI PIN on the NPCI page to complete the payment.</p>
+                 <p>Alternatively, merchant can send you a collect request & you can complete the payment entering your UPI PIN.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <table>
+        <tr class="bc">
+          <td><h4>SEND MONEY</h4></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Enter the UPI ID of the friend to whom you want to send money.</p>
+              <p>Enter the amount you want to send.</p>
+               <p>Select the account from which you want to pay.</p>
+                <p>Enter your UPI PIN on the NPCI page to complete the payment.</p>
+                 <p>Your friend receives the money directly in his bank account and he is instantly notified on his mobile.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item item3">
+    <div>
+      <table>
+        <tr class="bc">
+          <td><h4>COLLECT REQUEST</h4></td>
+        </tr>
+        <tr>
+          <td>
+            <p>Enter the VPA of the friend from whom you wish to request money.</p>
+              <p>Enter the amount you want to request.</p>
+               <p>Select the VPA/Account in which you want to receive the money.</p>
+                <p>Your friend instantly receives the notification on his UPI app.</p>
+                 <p>Your friend accepts the request & enters his UPI PIN. You'll instantly receive the amount in your bank account.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<div class="container">
+  <div class="row cau">
+     <h3>UPI IS SAFE & SECURE</h3>
+  </div>
+</div>
+
+
+
+<div class="container upm15">
+  <div class="item item1">
+    <div>
+      <h4>DEVICE AUTHENTICATION</h4>
+      <p>When you register on any UPI app, your mobile device details & mobile number are captured through a SMS & registered on the banks servers. This serves as the first factor authentication for UPI.</p>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <img src="images/upisvg/Shield.svg">
+    </div>
+  </div>
+  <div class="item item3">
+    <div>
+      <h4>UPI PIN AUTHENTICATION</h4>
+      <p>Your bank account UPI PIN acts as the 2nd factor authentication. You can change or reset your UPI PIN anytime. You need to enter your UPI PIN on the NPCI page every time you make a payment.</p>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<div class="container">
+  <div class="row cau">
+     <h3>WHY UPI?</h3>
+  </div>
+</div>
+
+
+
+<div class="container upm19">
+  <div class="item item1">
+    <div>
+      <table>
+        <tr class="bc">
+          <td><h4>UPI vs NETBANKING</h4></td>
+        </tr>
+        <tr>
+          <td>
+            <p>No hassle of logging into internet banking using your username & password.</p>
+              <p> No need to share and ask complicated account numbers and IFSC codes.</p>
+               <p>No need to add account details and wait for a day to start sending money.</p>
+                <p>No compulsion to use your bank platform. You can use any UPI app for transferring money.</p>
+                 <p>You can only send money with internet banking, but with UPI you can also request money & do much more.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <table>
+        <tr class="bc">
+          <td><h4>UPI vs WALLETS</h4></td>
+        </tr>
+        <tr>
+          <td>
+            <p>No hassle of adding money to your wallet before you can start transacting.</p>
+              <p>With UPI, you can pay money to anyone directly from your bank account.</p>
+               <p>Using a wallet, you can transfer money amongst the users of the same wallet.</p>
+                <p>Money kept in the wallets doesn’t earn any interest, but with UPI money stays in your bank account & earns interest.</p>
+                 <p>There is a monthly spending limit in the case of wallets. But with UPI, there are no such limits & restrictions.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div class="item item3">
+    <div>
+      <table>
+        <tr class="bc">
+          <td><h4>UPI vs CARDS</h4></td>
+        </tr>
+        <tr>
+          <td>
+            <p>No hassle of entering card numbers, expiry date, cvv while making a payment.</p>
+              <p>No need to wait for OTP & read it from text message to make a payment.</p>
+               <p>No need to provide sensitive card details and then worry about their misuse.</p>
+                <p>Card payments are generally used for merchant payments, but with UPI you can also pay your friends.</p>
+                 <p>UPI architecture and the payments flows are such that they make payments faster, simpler & much more secure.</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<hr>
+
+
+<div class="container">
+  <div class="row cau cau2 tklft">
+     <h3>IT'S EASY TO GET STARTED</h3>
+  </div>
+</div>
+
+
+
+<div class="container upm16">
+  <div class="item item1">
+    <div>
+      <table>
+          <tr>
+            <td><span>1</span></td>
+            <td><h4>DOWNLOAD</h4></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <p>Download Khaalijeb app
+               from playstore and install it.</p>
+            </td>
+          </tr>
+        </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <table>
+          <tr>
+            <td><span>2</span></td>
+            <td><h4>DEVICE REGISTRATION</h4></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <p>After you open the APP, a SMS will be sent from your mobile number to capture your device details.</p>
+            </td>
+          </tr>
+        </table>
+    </div>
+  </div>
+  <div class="item item3">
+    <div>
+      <table>
+          <tr>
+            <td><span>3</span></td>
+            <td><h4>CREATE VPA</h4></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <p>Create UPI ID of your choice, something like ram@kotak.</p>
+            </td>
+          </tr>
+        </table>
+    </div>
+  </div>
+</div>
+
+
+<div class="container upm17">
+  <div class="item item1">
+    <div>
+      <table>
+          <tr>
+            <td><span>4</span></td>
+            <td><h4>SELECT YOUR BANK</h4></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <p>Select your bank from the list of banks. The bank account linked with your mobile number will appear.</p>
+            </td>
+          </tr>
+        </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+      <table>
+          <tr>
+            <td><span>5</span></td>
+            <td><h4>SET UPI PIN & TRANSACT</h4></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td>
+              <p>Select the bank account and set the UPI PIN. You can now start transacting with UPI.</p>
+            </td>
+          </tr>
+        </table>
+    </div>
+  </div>
+</div>
+<hr>
+
+<div class="container">
+  <div class="row cau cau2">
+     <h3>UPI IS FOR EVERYONE</h3>
+  </div>
+</div>
+
+
+
+<div class="container upm18">
+  <div class="item item1">
+    <div>
+       <table>
+        <tr>
+          <td><img src="/images/merchantsvgn/Customer.svg"></td>
+          <td>
+            <h4>FOR CUSTOMER</h4>
+            <!-- <p>Pay directly from your bank account & receive money directly in your bank account. It’s secure, unbelievingly simple & amazingly fast.</p> -->
+            <p>Pay freinds or merchants directly from your bank account in a few taps.</p>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+            <button type="submit" style="border: 0; background: transparent;">
+              <img src="images/upisvg/Playstore_SVG.svg" style="width: 140px;height: 45px; margin-top: 8px;" />
+            </button>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+    <!-- <div>
+      <table>
+        <tr>
+          <td><img src="/images/merchantsvgn/Customer_58x58.svg"></td>
+          <td>
+            <h4>FOR CUSTOMER</h4>
+            <p>Pay directly from your bank account & receive money directly in your bank account. It’s secure, unbelievingly simple & amazingly fast.</p>
+          </td>
+        </tr>
+      </table>
+      <button type="submit" style="border: 0; background: transparent;">
+        <img src="images/upisvg/Playstore_SVG.svg" style="width: 140px;height: 45px; margin-top: 32px;" />
+      </button>
+    </div> -->
+    <!-- <div>
+      <h4>FOR CUSTOMER</h4>
+      <p>Pay directly from your bank account & receive money directly in your bank account. It’s secure, unbelievingly simple & amazingly fast.</p>
+      <button type="submit" style="border: 0; background: transparent;">
+        <img src="images/upisvg/Playstore_SVG.svg" style="width: 140px;height: 45px; margin-top: 32px;" />
+      </button>
+    </div> -->
+  </div>
+  <div class="item item2">
+    <div>
+       <table>
+        <tr>
+          <td><img src="/images/merchantsvgn/Clock Fast_58x58.svg"></td>
+          <td>
+            <h4>FOR MERCHANT</h4>
+            <!-- <p>UPI is the most convenient and affordable way to accept payments and also the simplest way for your customers to make payments.</p> -->
+            <p>UPI is the most convenient & affordable way to accept payments.</p>
+          </td> 
+        </tr>
+        <tr>
+          <td></td>
+          <td><button type="submit" ng-click="button_click('/business')" class="buttonBussiness">KNOW MORE</button></td>
+        </tr>
+      </table>
+      
+    </div>
+    <!-- <div>
+      <h4>FOR BUSSINESSES</h4>
+      <p>UPI is the most convenient and affordable way to accept payments and also the simplest way for your customers to make payments.</p>
+      <button type="submit" class="buttonBussiness">KNOW MORE</button>
+    </div> -->
+  </div>
+</div>
+
+
+
+<section class="copyright">
+    <div class="container mtl">
+        <div class="row fmdevice">
+            <div class="col-md-6 col-sm-6 col-xs-6 lt">
+                <div class="footermainicon">
+                    <span class="textconnectfooter">Stay in Touch</span>
+                    <div class="social_icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/KhaaliJeb" target="_blank" class="facebookicon"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/KhaaliJeb" target="_blank" class="twittericon"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/u/0/112181609625900290821" target="_blank" class="plusicon"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 r rt">
+                <!-- <div class="messagenintyone">
+                    <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a>
+                </div> -->
+                <div class="abt_im">
+                  <h3>DOWNLOAD NOW</h3>
+                  <div class="_im">
+                  <a href="#" type="button"><img class="im1" src="/images/svgs1/Google Play.svg" /></a>
+                  <a href="#" type="button"><img class="im2" src="/images/svgs1/App Store.svg" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer-container-legal">
+        <hr class="hrfooter">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footerMargin">
+            <div class="col-md-6">
+                <a ng-click="button_click('/about')" class="footeranchortag">About</a>
+                <a ng-click="button_click('/contact')" class="footeranchortag">Contact</a>
+                <a href="#" class="footeranchortag">Sitemap</a>
+            </div>
+            <div class="col-md-6">
+             <div class="footercompanyname">
+                <a ng-click="button_click('/legal')" class="footeranchortag">Legal</a>
+                <a href="" class="footeranchortag" style=" pointer-events: none; cursor: default;">INKDROPS LABS PVT LTD &copy; 2018</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+

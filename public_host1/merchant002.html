@@ -1,0 +1,534 @@
+
+<div class="header-wrap hideheader" id="headerWrap" ng-controller="hideHeaderCtrl">
+<nav class="navbar navbar-default legalnavbartop mainmenu">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button id="burgbtn"
+             type="button" 
+             class="navbar-toggle legaltogglebutton" 
+             data-toggle="collapse" 
+             data-target=".navbar-collapse" 
+              ng-click='burgebtn()'
+              ng-show='burgbtn'>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+                                          <span class="icon-bar"></span>
+      </button>
+      <button id="crsbtn" 
+              type="button" 
+              class="navbar-toggle legaltogglebutton" 
+              data-toggle="collapse" 
+              data-target=".navbar-collapse"
+              ng-click='crosbtn()' 
+              ng-show="crsbtn" >
+                                          <!-- <i class="fa fa-times" 
+                                             aria-hidden="true" 
+                                             style="font-size: 24px; font-weight: 300; color: #777;">
+                                               
+                                          </i> -->
+                                          <img src="images/homesvgn/Cancel.svg" style="height: 20px;margin-top: 4px;">
+      </button>
+      <div class="legal-img-logo">
+        <a ng-href="/home" ng-click="button_click('/home')"><img class="logo_all" style="width:60px; height:60px; cursor: pointer;" target="_self"></a>
+      </div>
+    </div>
+
+    <div class="box effect1" ng-if="clpsef">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <li><a ng-click="button_click('/home')"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li>
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-click="button_click('/home')" type="button">HOME</a></li>
+        <li><a ng-click="button_click('/about')">ABOUT</a></li>
+        <li><a ng-click="button_click('/upi')">UPI</a></li>
+        <li><a ng-click="button_click('/student')">STUDENT</a></li>
+        <li><a ng-click="button_click('/business')" style="color: #ef5350 !important;">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked()" target="_blank">BLOG</a></li>
+        <li><a ng-click="button_click('/contact')">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="boxmain">
+    <div class="collapse navbar-collapse legalmenu closeOnHtml">
+      <ul class="nav navbar-nav hidenForMobile">
+        <!-- <li><a ng-href="/home" ng-click="button_click('/home')" target="_self"><img src="images/svgs1/KhaaliJeb Font 170x33 (2).svg" class="company_name_headers"></a></li> -->
+      </ul>       
+      <ul class="nav navbar-nav navbar-right" style="background-color: #fff; ">
+        <li><a ng-href="/home" ng-click="button_click('/home')" type="button" target="_self">HOME</a></li>
+        <li><a ng-href="/about" ng-click="button_click('/about')" target="_self">ABOUT</a></li>
+        <li><a ng-href="/upi" ng-click="button_click('/upi')" target="_self">UPI</a></li>
+        <li><a ng-href="/student" ng-click="button_click('/student')" target="_self">STUDENT</a></li>
+        <li><a ng-href="/business" ng-click="button_click('/business')" style="color: #ef5350 !important;" target="_self">BUSINESS</a></li>
+        <li><a ng-href="https://medium.com/khaalijeb" ng-click="blogclicked2()" class="blogcls" onmouseover="chred(this)" onmouseout="chblack(this)" target="_blank">BLOG</a></li>
+        <li><a ng-href="/contact" ng-click="button_click('/contact')" target="_self">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  </div>
+</nav>
+</div>
+
+
+
+<div id="wrapper" class="cmn2all">
+	<div class="mch_hero">
+		<div class="mch_hero1">
+			<p><strong>Enabling simple transactions &
+delightful interactions.</strong></p>
+		</div>
+	</div>
+	<div id="cover" ></div>
+</div>
+
+<!-- <div class="container mtb1">
+	<div class="row">
+		<div>
+			<div class="col-md-6 col-sm-6 l">
+				<div class="lb">
+					<button class="KnowMorebutton h_knb" type="button" data-toggle="modal" data-target="#myModal" >Become a Partner</button>
+				</div>
+			</div>
+			<div class="col-md-6 col-sm-6 r">
+				<div class="rb">
+					<button class="KnowMorebutton h_knb" type="button" onclick="location.href='https://khaalijeb.com/home';">Get UPI QR</button>
+				</div>
+			</div>
+		</div>
+
+
+
+	</div>
+</div> -->
+
+
+
+
+<!-- Modal -->
+<!-- <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+
+            </div>
+            <div class="modal-body">...</div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<!-- Modal -->
+<!-- <div class="container mtm15">
+	<div class="item item1">
+		<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    		<div class="modal-dialog modal-sm changemd">
+        		<div class="modal-content shape1">
+            		<div class="modal-header">
+                		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 		<h4 class="modal-title" id="myModalLabel">Become a partner</h4>
+            		</div>
+            		<div class="modal-body">
+            			<form>
+            				<input type="text" name="fullname" placeholder="Full Name" class="textp">
+            				<input type="text" name="fullname" placeholder="Business Name" class="textp">
+            				<input type="text" name="fullname" placeholder="Mobile Number" class="textp">
+            				<input type="text" name="fullname" placeholder="Email Address" class="textp">
+            				<input type="text" name="fullname" placeholder="Contacting For" list="browsers" class="textp">
+            				<datalist id="browsers">
+  								<option value="Chrome">
+  								<option value="Firefox">
+  								<option value="Internet Explorer">
+  								<option value="Opera">
+  								<option value="Safari">
+  								<option value="Microsoft Edge">
+							</datalist>
+            			</form>
+            		</div>
+            		<div class="modal-footer changemf">
+                		<button type="button" class="KnowMorebutton h_knb">SUBMIT</button>
+            		</div>
+        		</div>
+    		</div>
+		</div>
+	</div>
+</div>
+
+
+<div class="container mtm16">
+	<div class="item item1">
+		<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    		<div class="modal-dialog modal-sm changemd">
+        		<div class="modal-content shape2">
+            		<div class="modal-header">
+                		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                 		<h4 class="modal-title" id="myModalLabel">Generate UPI QR code</h4>
+            		</div>
+            		<div class="modal-body">...</div>
+            		<div class="modal-footer">
+                		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                		<button type="button" class="btn btn-primary">Save changes</button>
+            		</div>
+        		</div>
+    		</div>
+		</div>
+	</div>
+</div>
+
+<div class="container mtm14">
+	<div class="item">
+		<div>
+			<button class="KnowMorebutton h_knb" id="myBtn1" type="button" data-toggle="modal" data-target="#myModal1">Become a Partner</button>
+			
+			<button class="KnowMorebutton h_knb" id="myBtn1" type="button" data-toggle="modal" data-target="#myModal2">Get UPI QR</button>
+		</div>
+	</div>
+</div> -->
+
+<!-- <button id="myBtn" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Launch demo modal</button> -->
+<!-- <a href="#loginScreen" class="button KnowMorebutton h_knb" type="button">Become a Partner</a> -->
+
+
+<div class="container mtm10">
+	<div class="item item1">
+		<h4 class="mbon">Accept UPI payments from any UPI app</h4>
+		<div>
+			<img src="images/merchantsvgn/Food Truck.svg">
+		</div>
+	</div>
+	<div class="item item2">
+		<div>
+			<h4 class="mboff">Accept UPI payments from any UPI app</h4>
+			<p>Stand out by offering UPI payment option to your customers. 
+			 UPI is the simplest & easiest way to pay</p>
+			<p>Accept payments from not only Khaalijeb customers, but from any UPI app like BHIM, Phonepe, Google Tez etc.</p>
+		</div>
+	</div>
+</div>
+
+<div class="container mtm11">
+	<div class="item item1">
+		<div>
+			<h4 class="mboff">Engage with the coolest student community</h4>
+			<p>Gain brand loyalty & exposure by offering exclusive benefits to our student members.</p>
+			<p>Students are the most active consumers & early adopters. They are brand influencers and marketers.</p>
+		</div>
+	</div>
+	<div class="item item2">
+		<h4 class="mbon">Engage with the coolest student community</h4>
+		<div>
+			<img src="images/merchantsvgn/Shop+Students.svg">
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<div class="container">
+	<div class="row cau tklft">
+		 <h3>ACCEPT UPI PAYMENTS EASILY</h3>
+	</div>
+</div>
+
+
+<div class="container mtm12">
+	<div class="item item1">
+		<div>
+			<table>
+				<tr>
+					<td><img src="/images/merchantsvgn/Payment Instant_58x58.svg"></td>
+					<td>
+						<h4>Same day settlement</h4>
+						<p>Most of the customers payments arrive within seconds, directly in your bank account.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Money Price_58x58.svg"></td>
+					<td>
+						<h4>Affordable pricing</h4>
+						<p>Cheaper than other payment methods. No set-up or extra hardware cost.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Wand_58x58.svg"></td>
+					<td>
+						<h4>Easy to get started</h4>
+						<p>No paperworks, you can start accepting UPI payments in minutes.</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="item item2">
+		<div>
+			<table>
+				<tr>
+					<td><img src="/images/merchantsvgn/Lock Secure_58x58.svg"></td>
+					<td>
+						<h4>Wider acceptance</h4>
+						<p>Accept payments from customers using any UPI app like BHIM, PhonePe etc.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Customer.svg"></td>
+					<td>
+						<h4>Easy for customer</h4>
+						<p>It takes just a few taps to make a payment, as easy as texting a friend.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Clock Fast_58x58.svg"></td>
+					<td>
+						<h4>All merchant type</h4>
+						<p>We provide solutions for all types of merchants, online or offline.</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+
+<div class="container">
+	<div class="row cau tklft">
+		 <h3>STUDENT LOYALTY PROGRAM</h3>
+	</div>
+</div>
+
+
+
+<div class="container mtm13">
+	<div class="item item1">
+		<div>
+			<table>
+				<tr>
+					<td><img src="/images/merchantsvgn/Large Numbers_58x58.svg"></td>
+					<td>
+						<h4>Largest consumer base</h4>
+						<p>Around 20% of our country’s population are students. It’s a huge huge market.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Early Adopters_58x58.svg"></td>
+					<td>
+						<h4>Early adopters</h4>
+						<p>Students love trying new stuffs. They may form a strong bond with your brand.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Man_58x58.svg"></td>
+					<td>
+						<h4>Brand marketers</h4>
+						<p>Students are brand influencers. They are the master executors of word of mouth marketing.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Shopping_58x58.svg"></td>
+					<td>
+						<h4>Most active consumers</h4>
+						<p>Students are active shoppers. They frequently hang out & are repeat visitors at your store.</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="item item2">
+		<div>
+			<table>
+				<tr>
+					<td><img src="/images/merchantsvgn/Benefit Coupon.svg"></td>
+					<td>
+						<h4>Love exclusive benefits</h4>
+						<p>Students are more likely to notice free giveaways & deals than simple advertisements.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Mobile Shopping_58x58.svg"></td>
+					<td>
+						<h4>Smartphone users</h4>
+						<p>Students are highly active on smartphones. They discover & shop on their phones.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Student Verified.svg"></td>
+					<td>
+						<h4>Verified student community</h4>
+						<p>Students need to pass our robust verification mechanisms to avail student benefits.</p>
+					</td>
+				</tr>
+			</table>
+			<table class="mt">
+				<tr>
+					<td><img src="/images/merchantsvgn/Megaphone_58x58.svg"></td>
+					<td>
+						<h4>Affordable marketing platform</h4>
+						<p>Our loyalty program is a low cost marketing platform. No setup or extra hardware costs.</p>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+
+<hr>
+
+<div class="container">
+	<div class="row cau">
+		 <h3>SIGN UP TO GROW YOUR BUSINESS</h3>
+		 </p>
+	</div>
+</div>
+
+
+
+<div class="container htm17">
+  <div class="item item1">
+    <div>
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <img src="images/homesvgn/Mobile Accept.svg">
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>Accept UPI payments from any UPI app
+                  like BHIM, Phonepe, Google Tez etc.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+    </div>
+  </div>
+  <div class="item item2">
+    <div>
+          <table>
+            <tr>
+              <td>
+                <div>
+                  <img class="nml" src="images/homesvgn/Shopping.svg">
+                </div>
+              </td>
+              <td>
+                <div>
+                  <p>Engage with a verified student community by offering exclusive
+                  benefits.</p>
+                </div>
+              </td>
+            </tr>
+          </table>
+    </div>
+  </div>
+</div>
+
+
+
+<div align="center">
+	<button class="KnowMorebutton h_knb" type="button">Become a Partner</button>
+</div>
+
+
+
+<section class="copyright">
+    <div class="container mtl">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="footermainicon">
+                    <span class="textconnectfooter">Stay in Touch</span>
+                    <div class="social_icons">
+                        <ul>
+                            <li><a href="https://www.facebook.com/KhaaliJeb" target="_blank" class="facebookicon"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li><a href="https://twitter.com/KhaaliJeb" target="_blank" class="twittericon"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="https://plus.google.com/u/0/112181609625900290821" target="_blank" class="plusicon"><i class="fa fa-google-plus"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6 r">
+                <!-- <div class="messagenintyone">
+                    <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91"></a>
+                </div> -->
+                <div class="abt_im">
+                  <h3>DOWNLOAD NOW</h3>
+                  <div class="_im">
+                  <a href="#" type="button"><img class="im1" src="/images/svgs1/Google Play.svg" /></a>
+                  <a href="#" type="button"><img class="im2" src="/images/svgs1/App Store.svg" /></a>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid footer-container-legal">
+        <hr class="hrfooter">
+    </div>
+
+    <div class="container-fluid">
+        <div class="row footerMargin">
+            <div class="col-md-6">
+                <a ng-click="button_click('/about')" class="footeranchortag">About</a>
+                <a ng-click="button_click('/contact')" class="footeranchortag">Contact</a>
+                <a href="#" class="footeranchortag">Sitemap</a>
+            </div>
+            <div class="col-md-6">
+             <div class="footercompanyname">
+                <a ng-click="button_click('/legal')" class="footeranchortag">Legal</a>
+                <a href="" class="footeranchortag" style=" pointer-events: none; cursor: default;">INKDROPS LABS PVT LTD &copy; 2018</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
