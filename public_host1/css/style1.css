@@ -6713,10 +6713,10 @@ textarea.ng-invalid.ng-touched{border:1px solid red;}
 }
 .css-carousel {
   width:500%;
-  -webkit-animation: css-carousel 40s linear infinite;
+ /* -webkit-animation: css-carousel 40s linear infinite;
   -moz-animation: css-carousel 40s linear infinite;
   -ms-animation: css-carousel 40s linear infinite;
-  animation: css-carousel 40s linear infinite;
+  animation: css-carousel 40s linear infinite;*/
 }
 
 .css-carousel .css-img {
@@ -8186,7 +8186,7 @@ textarea.ng-invalid.ng-touched{border:1px solid red;}
     width: 100%;
     position: fixed;
     background-color: #fff;
-    z-index: 1;
+    z-index: 5;
     top: 0px;
     transition: top 0.3s;
 }
@@ -11536,7 +11536,9 @@ body.modal-open {
 }
 
 
-
+#crsbtn{
+    display: none;
+}
 
 
 
